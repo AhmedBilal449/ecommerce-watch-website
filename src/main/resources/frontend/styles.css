@@ -73,6 +73,7 @@ body{
   transition: all 1s ease;
   transform-origin: left;
   transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 .container .cover .text{
