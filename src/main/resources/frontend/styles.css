@@ -1,4 +1,4 @@
-/* Google Font Link */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -46,7 +46,7 @@ body{
   height: 100%;
   width: 100%;
   opacity: 0.5;
-  z-index: 12;
+  z-index: 12;  
 }
 .container .cover::after{
   opacity: 0.3;
