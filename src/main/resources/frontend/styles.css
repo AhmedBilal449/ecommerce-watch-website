@@ -26,6 +26,7 @@ body{
 
 .container #flip:checked ~ .cover{
   transform: rotateY(-180deg);
+  backface-visibility: hidden;
 }
  .container .cover .front,
  .container .cover .back{
