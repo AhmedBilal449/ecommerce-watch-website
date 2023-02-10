@@ -14,9 +14,11 @@ public class ShopApplication {
 	}
 
 	@GetMapping("/")
-	public String welcome()
+	public String hello()
 	{
-		return "CSTP";
+		return "hi from IntelliJ";
 	}
+
+
 
 }
