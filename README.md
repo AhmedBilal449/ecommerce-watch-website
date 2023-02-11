@@ -3,9 +3,8 @@
 
 E-Commerce site using Springboot
 
-Set **JDK Version to 17.x**
-
 # Setting up
+Ensure **JDK Version is 17.x**
 ### Eclipse
 1. Import > Maven > Existing Maven Projects > Select Folder \
 2. Package Explorer Window > Right Click `shop` > Run As > `Maven Build...` > Goals: clean install > Run 
@@ -15,4 +14,6 @@ Set **JDK Version to 17.x**
 # Dependencies
 - Thymeleaf
 - Spring Web
-- Spring Boot DevTools
+- Spring Data JPA
+- MySQL Driver
+- H2 Database
