@@ -14,43 +14,39 @@ public class Account {
 
     @Id
     @GeneratedValue
-    private Long user_id;
+    @Column(name="user_id", nullable=false)
+    private Long userID;
 
     @Column(name="email", nullable=false)
     private String email;
     @Column(name="pass_hash", nullable=false)
-    private String pass_hash;
+    private String passHash;
     @Column(name="group_access", nullable=false)
     @Enumerated(EnumType.STRING)
-    private Group group_access;
-
+    private Group group;
 
     protected Account() {}
 
     public Account(String email, String pass_hash, Group group_access) {
         this.email = email;
-        this.pass_hash = pass_hash;
-        this.group_access = group_access;
+        this.passHash = pass_hash;
+        this.group = group_access;
     }
 
-    public Long getUser_id() {
-        return user_id;
+    public Long getUser() {
+        return userID;
     }
 
-    /*
-        Function names correlate to POST parameters
-        email, pass_hash, group_access
-     */
     public String getEmail() {
         return email;
     }
 
-    public String getPass_hash() {
-        return pass_hash;
+    public String getPassHash() {
+        return passHash;
     }
 
-    public Group getGroup_access() {
-        return group_access;
+    public Group getGroup() {
+        return group;
     }
 
 }

@@ -14,12 +14,4 @@ public class ShopApplication {
 		SpringApplication.run(ShopApplication.class, args);
 	}
 
-	@GetMapping("/")
-	public String hello()
-	{
-		return "hi from IntelliJ";
-	}
-
-
-
 }
