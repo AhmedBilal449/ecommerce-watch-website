@@ -1,3 +1,4 @@
+/*Login and Sign Up Page*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -6,7 +7,7 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
-body{
+.body-container{
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -222,3 +223,5 @@ body{
     display: none;
   }
 }
+
+/*Products Page*/
