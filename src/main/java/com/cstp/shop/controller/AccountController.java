@@ -14,16 +14,11 @@ public class AccountController {
     @Autowired
     AccountRepository accountRepository;
 
-    /*
-        Right now this is semi functional, it creates an account with the correct email
-        However getting any other parameter returns null
-     */
-    @PostMapping("/create-account")
+    @PostMapping("/account")
     public ResponseEntity<Account> createAccount(@RequestBody Account account) {
         try {
-            System.out.println("ResponseEntity: "+ account.getEmail()+" "+ account.getPassHash()+" "+account.getGroup() );
             Account _account = accountRepository
-                    .save(new Account(account.getEmail(), account.getPassHash(), "CUSTOMER"));
+                    .save(new Account(account.getEmail(), account.getPass_hash(), Account.Group.CUSTOMER));
             return new ResponseEntity<>(_account, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
