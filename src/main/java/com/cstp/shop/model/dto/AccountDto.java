@@ -4,6 +4,7 @@ import com.cstp.shop.model.Account;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /*
     Transfers form data into an object
@@ -11,6 +12,7 @@ import lombok.NoArgsConstructor;
     email, password, password_retype
  */
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class AccountDto
@@ -19,11 +21,11 @@ public class AccountDto
     private String password;
     private String password_retype;
 
-    public boolean isValidAccount()
+    public boolean isValid()
     {
-        return false;
+        if (!password.equals(password_retype)) return false;
+        return true;
     }
-
 
     public Account toAccount() {
         return new Account(email, password, Account.Group.CUSTOMER);

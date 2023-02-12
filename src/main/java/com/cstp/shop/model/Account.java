@@ -17,7 +17,7 @@ public class Account {
     @Column(name="user_id", nullable=false)
     private Long userID;
 
-    @Column(name="email", nullable=false)
+    @Column(name="email", nullable=false, unique=true)
     private String email;
     @Column(name="pass_hash", nullable=false)
     private String passHash;
