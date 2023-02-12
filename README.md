@@ -13,6 +13,8 @@ Ensure **JDK Version is 17.x**
 
 # Dependencies
 - Thymeleaf
+- Spring Security
+- Spring Validation
 - Spring Web
 - Spring Data JPA
 - MySQL Driver
