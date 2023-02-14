@@ -6,14 +6,14 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+.body-container-about-us{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
   }
-  .container{
+  .container-about-us{
     position: relative;
     max-width: 800px;
     width: 100%;
@@ -22,7 +22,7 @@ body{
     box-shadow: 0 0px 10px rgba(0,0,0,5);
     perspective: 2700px;
   }
-  .container .text{
+  .container-about-us .text{
     font-size: 35px;
     text-align: center;
     font-weight: 600;
@@ -32,10 +32,14 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-.container form{
+.container-about-us p{
+    text-align: center;
+}
+
+.container-about-us form{
   padding: 30px 0 0 0;
 }
-.container form .form-row{
+.container-about-usform .form-row{
   display: flex;
   margin: 32px 0;
 }
@@ -130,19 +134,24 @@ form .form-row .textarea{
   z-index: 2;
 }
 @media (max-width: 700px) {
-  .container .text{
-    font-size: 30px;
+    .container-contact-us.text{
+    font-size: 40px;
   }
-  .container form{
-    padding: 10px 0 0 0;
+  .container-contact-us form{
+    padding: 50px 0 0 0;
   }
-  .container form .form-row{
+  .container-contact-us form .form-row{
     display: block;
   }
   form .form-row .input-data{
-    margin: 35px 0!important;
+    margin: 60px 0!important;
   }
   .submit-btn .input-data{
+    top: -20px;
     width: 40%!important;
+    height: 1000%!important;
+    right: -75px;
   }
+
+  
 }
