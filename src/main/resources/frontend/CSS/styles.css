@@ -346,3 +346,215 @@
   z-index: -1;
   display: flex;
 }
+/* Contact Us Page*/
+
+.body-container-contact-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
+}
+
+.container-contact-us{
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 40px 10px 50px;
+  box-shadow: 0 0px 10px rgba(0,0,0,5);
+  perspective: 2700px;
+}
+.container-contact-us .text{
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(right, #0c0a0a 10% ,#1950a3 90% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-contact-us form{
+padding: 30px 0 0 0;
+}
+.container-contact-us form .form-row{
+display: flex;
+margin: 32px 0;
+}
+form .form-row .input-data{
+width: 100%;
+height: 40px;
+margin: 0 20px;
+position: relative;
+}
+form .form-row .textarea{
+height: 70px;
+}
+.input-data input,
+.textarea textarea{
+display: block;
+width: 100%;
+height: 100%;
+border: none;
+font-size: 17px;
+border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+transform: translateY(-20px);
+font-size: 14px;
+color: #3498db;
+}
+.textarea textarea{
+resize: none;
+padding-top: 10px;
+}
+.input-data label{
+position: absolute;
+pointer-events: none;
+bottom: 10px;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+.textarea label{
+width: 100%;
+bottom: 40px;
+background: #fff;
+}
+.input-data .underline{
+position: absolute;
+bottom: 0;
+height: 2px;
+width: 100%;
+}
+.input-data .underline:before{
+position: absolute;
+content: "";
+height: 2px;
+width: 100%;
+background: #3498db;
+transform: scaleX(0);
+transform-origin: center;
+transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+transform: scale(1);
+}
+.submit-btn .input-data{
+overflow: hidden;
+height: 45px!important;
+width: 25%!important;
+}
+.submit-btn .input-data .inner{
+height: 100%;
+width: 300%;
+position: absolute;
+left: -100%;
+background: -webkit-linear-gradient(right, #000000 ,#1950a3 );
+transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+left: 0;
+}
+.submit-btn .input-data input{
+background: none;
+border: none;
+color: #fff;
+font-size: 17px;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 1px;
+cursor: pointer;
+position: relative;
+z-index: 2;
+}
+@media (max-width: 600px) {
+.container-contact-us .text{
+  font-size: 40px;
+}
+.container-contact-us form{
+  padding: 50px 0 0 0;
+}
+.container-contact-us form .form-row{
+  display: block;
+}
+form .form-row .input-data{
+  margin: 60px 0!important;
+}
+.submit-btn .input-data{
+  top: -20px;
+  width: 40%!important;
+  height: 1000%!important;
+  right: -75px;
+}
+
+/* About us page*/
+
+.body-container-about-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
+}
+.container-about-us{
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 40px 10px 50px;
+  box-shadow: 0 0px 10px rgba(0,0,0,5);
+  perspective: 2700px;
+}
+.container-about-us .text{
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(right, #0c0a0a 10% ,#1950a3 90% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-about-us p{
+  text-align: center;
+}
+
+.container-about-us form{
+padding: 30px 0 0 0;
+}
+.container-about-usform .form-row{
+display: flex;
+margin: 32px 0;
+}
+
+@media (max-width: 600px) {
+  .body-container-about-us{
+    background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
+  }
+  
+  .container-about-us.text{
+  font-size: 40px;
+}
+.container-about-us form{
+  padding: 50px 0 0 0;
+}
+.container-about-us form .form-row{
+  display: block;
+}
+form .form-row .input-data{
+  margin: 60px 0!important;
+}
+.submit-btn .input-data{
+  top: -20px;
+  width: 40%!important;
+  height: 1000%!important;
+  right: -75px;
+}
+
+
+}
