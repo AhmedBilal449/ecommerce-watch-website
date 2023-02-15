@@ -224,6 +224,7 @@
   }
 }
 
+<<<<<<< HEAD
 /*Home Page*/
 
 .video-container {
@@ -410,6 +411,8 @@ width:50%;
   height:100px;
 }
 
+=======
+>>>>>>> f823089 (fixing my errors)
 /*Products Page*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
@@ -523,7 +526,11 @@ width:50%;
     transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 /* Contact Us Page*/
+=======
+/* Contact Us and About Us Page*/
+>>>>>>> f823089 (fixing my errors)
 
 .body-container-contact-us{
   display: flex;
@@ -669,7 +676,10 @@ form .form-row .input-data{
   right: -75px;
 }
 
+<<<<<<< HEAD
 /* About us page*/
+=======
+>>>>>>> f823089 (fixing my errors)
 
 .body-container-about-us{
   display: flex;
