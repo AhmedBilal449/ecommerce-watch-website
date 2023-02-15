@@ -418,10 +418,6 @@ width:50%;
     min-height: 100vh;
     display: grid;
     place-content: center;
-    background: url(../Images/background1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    
 }
 
 .product-container{
