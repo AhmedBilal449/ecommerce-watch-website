@@ -698,6 +698,79 @@ width:50%;
     transform: scale(1.1);
 }
 
+.filter-section {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filter-option {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+  flex: 1;
+  text-align: right;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 2;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #212121;
+}
+
+@media only screen and (max-width: 768px) {
+  .filter-option {
+    flex: 100%;
+  }
+  
+  label {
+    margin-right: 0;
+    flex: 100%;
+    text-align: left;
+  }
+  
+  select {
+    flex: 100%;
+  }
+  
+  button {
+    flex: 100%;
+  }
+}
+
+
 /* Contact and About Us  Page*/
 
 .body-container-contact-and-about-us{
