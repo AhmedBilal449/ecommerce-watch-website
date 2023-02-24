@@ -22,31 +22,42 @@
                 <h2>Filter Products</h2>
                 
                 <form>
-                  <div class="filter-option">
-                    <label for="price-range-filter">Price Range:</label>
-                    <select id="price-range-filter" name="price-range-filter">
-                      <option value="">All Prices</option>
-                      <option value="50-100">£50 - £100</option>
-                      <option value="100-200">£100 - £200</option>
-                      <option value="200-500">£200 - £500</option>
-                      <option value="500+">£500+</option>
-                    </select>
-                  </div>
-                  
-                  <div class="filter-option">
-                    <label for="sort-filter">Sort by:</label>
-                    <select id="sort-filter" name="sort-filter">
-                      <option value="default">Default</option>
-                      <option value="price-low-high">Price (Low to High)</option>
-                      <option value="price-high-low">Price (High to Low)</option>
-                      <option value="rating-high-low">Rating (High to Low)</option>
-                    </select>
-                  </div>
-                  
-                  <div class="filter-option">
-                    <button type="button" onclick="filterProducts()">Filter</button>
-                  </div>
-                </form>
+                    <div class="filter-option">
+                      <label for="price-range-filter">Price Range:</label>
+                      <select id="price-range-filter" name="price-range-filter">
+                        <option value="">All Prices</option>
+                        <option value="50-100">£50 - £100</option>
+                        <option value="100-200">£100 - £200</option>
+                        <option value="200-500">£200 - £500</option>
+                        <option value="500+">£500+</option>
+                      </select>
+                    </div>
+                    
+                    <div class="filter-option">
+                      <label for="brand-filter">Brand:</label>
+                      <select id="brand-filter" name="brand-filter">
+                        <option value="">All Brands</option>
+                        <option value="brand1">Rolex</option>
+                        <option value="brand2">Armani</option>
+                        <option value="brand3">Cartier</option>
+                        <option value="brand4">Audemars Piguet</option>
+                        <option value="brand5">Patek Philippe</option>
+                      </select>
+                    </div>
+                    
+                    <div class="filter-option">
+                      <label for="sort-filter">Sort by:</label>
+                      <select id="sort-filter" name="sort-filter">
+                        <option value="default">Relevance</option>
+                        <option value="price-low-high">Price (Low to High)</option>
+                        <option value="price-high-low">Price (High to Low)</option>
+                      </select>
+                    </div>
+                    
+                    <div class="filter-option">
+                      <button type="button" onclick="filterProducts()">Filter</button>
+                    </div>
+                  </form>
               </div>
                             
             <div class="products">

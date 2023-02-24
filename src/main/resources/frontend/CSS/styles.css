@@ -264,7 +264,7 @@ margin:auto;
 }
 
 
-button {
+.video-container button, .video-container2 button {
   font-size: 18px;
   color: #fff;
   font-family: inherit;
@@ -272,7 +272,7 @@ button {
   cursor: pointer;
   position: relative;
   border: none;
-  background: none;
+  background: none !important;
   text-transform: uppercase;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
@@ -743,7 +743,6 @@ button {
   color: #fff;
   cursor: pointer;
   flex: 1;
-  margin-top: 10px;
 }
 
 button:hover {
