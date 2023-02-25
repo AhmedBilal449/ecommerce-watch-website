@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
+import com.cstp.shop.model.dto.LoginDto;
+import com.cstp.shop.model.dto.SignupDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseCookie;
@@ -16,11 +18,9 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
 import com.cstp.shop.model.ERole;
 import com.cstp.shop.model.Role;
@@ -53,6 +53,56 @@ public class AuthController {
   @Autowired
   JwtUtils jwtUtils;
 
+  @PostMapping("/form/login")
+  public String formLogin(@Valid @ModelAttribute LoginDto loginDto, BindingResult result, Model model)
+  {
+    Authentication authentication = authenticationManager
+            .authenticate(new UsernamePasswordAuthenticationToken(loginDto.getEmail(), loginDto.getPassword()));
+
+    SecurityContextHolder.getContext().setAuthentication(authentication);
+
+    UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+
+    ResponseCookie jwtCookie = jwtUtils.generateJwtCookie(userDetails);
+
+    List<String> roles = userDetails.getAuthorities().stream()
+            .map(item -> item.getAuthority())
+            .collect(Collectors.toList());
+
+
+    return "Login successful";
+  }
+
+  @PostMapping("/form/signup")
+  public String formSignup(@Valid @ModelAttribute SignupDto signupForm, BindingResult result, Model model)
+  {
+    if (userRepository.existsByUsername(signupForm.getUsername())) {
+      return "Error: Username is already taken!";
+    }
+
+    if (userRepository.existsByEmail(signupForm.getEmail())) {
+      return "Error: Email is already in use!";
+    }
+
+    if (!signupForm.passwordsMatch()) {
+      return "Error: Passwords do not match!";
+    }
+    Set<Role> roles = new HashSet<>();
+    User user = new User( signupForm.getUsername(),
+                          signupForm.getEmail(),
+                          encoder.encode(signupForm.getPassword()));
+
+    Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+            .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+    roles.add(userRole);
+    user.setRoles(roles);
+
+    userRepository.save(user);
+
+    return "Form processed";
+  }
+
+
   @PostMapping("/signin")
   public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
@@ -84,6 +134,10 @@ public class AuthController {
 
     if (userRepository.existsByEmail(signUpRequest.getEmail())) {
       return ResponseEntity.badRequest().body(new MessageResponse("Error: Email is already in use!"));
+    }
+
+    if (!signUpRequest.passwordsMatch()) {
+      return ResponseEntity.badRequest().body(new MessageResponse("Error: Passwords do not match!"));
     }
 
     // Create new user's account
