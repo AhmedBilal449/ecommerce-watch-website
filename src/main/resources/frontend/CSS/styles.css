@@ -597,25 +597,25 @@ width:50%;
 }
 
 .product-container{
-    width: 90vw;
-    height:120vh;
+    width: 110vw;
+    height:150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.header{
+.headerr{
     width: 100%;
     text-align: center;
 }
 
-.header h1{
+.headerr h1{
     font-size: 50px;
     text-transform: uppercase;
     color: Black;
 }
 
-.header p{
+.headerr p{
     font-size: 20px;
     color: black;
 }
@@ -679,7 +679,7 @@ width:50%;
 
 .buy{
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     right: 20px;
 }
 .buy button{
