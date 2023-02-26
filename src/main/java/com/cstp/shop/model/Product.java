@@ -1,7 +1,7 @@
 package com.cstp.shop.model;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,6 +12,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "products")
 public class Product {
@@ -53,67 +55,19 @@ public class Product {
         this.stock = stock;
     }
 
-    public Long getId() {
-        return id;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Product product = (Product) o;
+
+        return id.equals(product.id);
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    @Override
+    public int hashCode() {
+        return id.hashCode();
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription(){
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getCategory(){
-        return category;
-    }
-
-    public void setCategory(String category){
-        this.category = category;
-    }
-
-    public String getImgpath(){
-        return imgpath;
-    }
-
-    public void setImgpath(String imgpath){
-        this.imgpath = imgpath;
-    }
-
-    public float getPrice(){
-        return price;
-    }
-
-    public void setPrice(float price){
-        this.price = price;
-    }
-
-    public int getStock(){
-        return stock;
-    }
-
-    public void setStock(int stock){
-        this.stock = stock;
-    }
-
-//    public Set<Role> getRoles() {
-//        return roles;
-//    }
-//
-//    public void setRoles(Set<Role> roles) {
-//        this.roles = roles;
-//    }
 }
