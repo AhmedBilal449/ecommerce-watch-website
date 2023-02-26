@@ -705,12 +705,22 @@ width:50%;
   text-align: center;
 }
 
+.filter-section h2{
+margin-bottom: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+}
+
 form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 800px;
 }
 
 .filter-option {
@@ -726,6 +736,7 @@ label {
   margin-right: 10px;
   flex: 1;
   text-align: right;
+  white-space: nowrap;
 }
 
 select {
@@ -748,6 +759,7 @@ button {
 button:hover {
   background-color: #212121;
 }
+
 
 @media only screen and (max-width: 768px) {
   .filter-option {
