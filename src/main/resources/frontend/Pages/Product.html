@@ -20,36 +20,53 @@
             </div>
             <div class="filter-section">
                 <h2>Filter Products</h2>
-
+            
                 <div class="filter-container">
-                <form id="filter-form">
-                    <div class="filter-option">
-                        <label for="price-range-filter">Price Range:</label>
-                        <select id="price-range-filter" name="price-range-filter">
-                            <option value="">All Prices</option>
-                            <option value="50-100">£50 - £100</option>
-                            <option value="100-200">£100 - £200</option>
-                            <option value="200-500">£200 - £500</option>
-                            <option value="500+">£500+</option>
-                        </select>
-                    </div>
-                
-                    <div class="filter-option">
-                        <label for="sort-filter">Sort by:</label>
-                        <select id="sort-filter" name="sort-filter">
-                            <option value="default">Relevance</option>
-                            <option value="price-low-high">Price (Low to High)</option>
-                            <option value="price-high-low">Price (High to Low)</option>
-                        </select>
-                    </div>
-                
-                    <div class="filter-option">
-                        <button type="button" onclick="filterProducts()">Filter</button>
-                    </div>
-                </form>
+                    <form id="filter-form">
+                        <div class="filter-option">
+                            <label for="price-range-filter">Price Range:</label>
+                            <select id="price-range-filter" name="price-range-filter">
+                                <option value="">All Prices</option>
+                                <option value="50-100">£50 - £100</option>
+                                <option value="100-200">£100 - £200</option>
+                                <option value="200-500">£200 - £500</option>
+                                <option value="500+">£500+</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <label for="sort-filter">Sort by:</label>
+                            <select id="sort-filter" name="sort-filter">
+                                <option value="default">Relevance</option>
+                                <option value="price-low-high">Price (Low to High)</option>
+                                <option value="price-high-low">Price (High to Low)</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <button type="button" onclick="filterProducts()">Filter</button>
+                        </div>
+                    </form>
+                    
                 </div>
+                <div class="card-containter">
+                    <div class="p-armani-card">
+                        <img src="../Images/filtarmani.png" alt="" />
+                    </div>
+                    <div class="p-ap-card">
+                        <img src="../Images/filtap.png" alt="" />
+                    </div>
+                    <div class="p-cartier-card">
+                        <img src="../Images/filtcartier.png" alt="" />
+                    </div>
+                    <div class="p-patek-card">
+                        <img src="../Images/filtpatek.png" alt="" />
+                    </div>
+                    <div class="p-rolex-card">
+                        <img src="../Images/filtrolex.jpg" alt="" />
+                    </div>
                 </div>
-                            
+            </div>
             <div class="products">
                  <div class="product-name">
                     <div class="product-image">
