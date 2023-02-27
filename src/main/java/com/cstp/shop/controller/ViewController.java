@@ -22,6 +22,14 @@ public class ViewController
         return mav;
     }
 
+    @GetMapping("/products")
+    public ModelAndView viewProducts()
+    {
+        ModelAndView mav = new ModelAndView("product");
+        return mav;
+    }
+
+
     @GetMapping("/")
     public String viewTest()
     {
