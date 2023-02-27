@@ -18,7 +18,65 @@
                 <h1>Men's Watches</h1>
                 <p> Rolex</p>
             </div>
-
+            <div class="filter-section">
+                <h2>Filter Products</h2>
+            
+                <div class="filter-container">
+                    <form id="filter-form">
+                        <div class="filter-option">
+                            <label for="price-range-filter">Price Range:</label>
+                            <select id="price-range-filter" name="price-range-filter">
+                                <option value="">All Prices</option>
+                                <option value="50-100">£50 - £100</option>
+                                <option value="100-200">£100 - £200</option>
+                                <option value="200-500">£200 - £500</option>
+                                <option value="500+">£500+</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <label for="sort-filter">Sort by:</label>
+                            <select id="sort-filter" name="sort-filter">
+                                <option value="default">Relevance</option>
+                                <option value="price-low-high">Price (Low to High)</option>
+                                <option value="price-high-low">Price (High to Low)</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <button type="button" onclick="filterProducts()">Filter</button>
+                        </div>
+                    </form>
+            
+                </div>
+                <div class="card-container">
+                    <a href="Armani.html">
+                        <div class="p-armani-card">
+                            <img src="../Images/filtarmani.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="Audemars Piguet.html">
+                        <div class="p-ap-card">
+                            <img src="../Images/filtap.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="Cartier.html">
+                        <div class="p-cartier-card">
+                            <img src="../Images/filtcartier.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="Patek Philippe.html">
+                        <div class="p-patek-card">
+                            <img src="../Images/filtpatek.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="Rolex.html">
+                        <div class="p-rolex-card">
+                            <img src="../Images/filtrolex.jpg" alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
             <div class="products">
 
                 <div class="product-name">
