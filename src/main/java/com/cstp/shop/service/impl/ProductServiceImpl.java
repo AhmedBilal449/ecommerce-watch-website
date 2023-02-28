@@ -1,7 +1,8 @@
-package com.cstp.shop.service;
+package com.cstp.shop.service.impl;
 
 import com.cstp.shop.model.Product;
 import com.cstp.shop.repository.ProductRepository;
+import com.cstp.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

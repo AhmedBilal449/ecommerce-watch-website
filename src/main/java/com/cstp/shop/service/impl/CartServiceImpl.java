@@ -1,4 +1,4 @@
-package com.cstp.shop.service;
+package com.cstp.shop.service.impl;
 
 
 import com.cstp.shop.model.Product;
