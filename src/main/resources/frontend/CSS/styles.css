@@ -842,7 +842,7 @@ button:hover {
 /* Contact Us  Page*/
 
 
-.contact{
+.contactCS{
   position: relative;
   min-height: 100vh;
   padding: 50px 100px;
@@ -853,13 +853,13 @@ button:hover {
   background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
 }
 
-.contact .content 
+.contactCS .contentCS 
 {
   max-width: 800px;
   text-align: center;
 }
 
-.contact .content h2
+.contactCS .contentCS h2
 {
   font-size: 36px;
   font-weight: 500;
@@ -867,7 +867,7 @@ button:hover {
   
 }
 
-.contact .content p
+.contactCS .contentCS p
 {
   font-size: 12px;
   font-weight: 300;
@@ -875,7 +875,7 @@ button:hover {
   
 }
 
-.container 
+.containerCS 
 {
   width: 100%;
   display: flex;
@@ -885,7 +885,7 @@ button:hover {
   
 }
 
-.container .contactInfo
+.containerCS .contactInfoCS
 {
   width: 50%;
   display: flex;
@@ -893,14 +893,14 @@ button:hover {
   
 }
 
-.contact .contactInfo .box 
+.contactCS .contactInfoCS .boxCS 
 {
  position: relative;
  padding: 20px 0;
  display: flex; 
 }
 
-.contact .contactInfo .box .icon
+.contactCS .contactInfoCS .boxCS .iconCS
 {
   min-width: 60px;
   height: 60px;
@@ -913,7 +913,7 @@ button:hover {
 
 }
 
-.contact .contactInfo .box .text 
+.contactCS .contactInfoCS .boxCS .textCS 
 {
   display: flex;
   margin-left: 20px;
@@ -923,27 +923,27 @@ button:hover {
   font-weight: 300;
 }
 
-.contact .contactInfo .box .text h3
+.contactCS .contactInfoCS .boxCS .textCS h3
 {
   font-weight: 500;
   color: rgb(8, 25, 31);
 }
 
-.contactForm
+.contactFormCS
 {
   width: 40%;
   padding: 40px;
   background: #ffffff;
 }
 
-.contactForm h2
+.contactFormCS h2
 {
   font-size: 30px;
   color: #333;
   font-weight: 500;
 }
 
-.contactForm .inputBox 
+.contactFormCS .inputBoxCS 
 {
   position: relative;
   width: 100%;
@@ -951,8 +951,8 @@ button:hover {
 
 }
 
-.contactForm .inputBox textarea,
-.contactForm .inputBox input
+.contactFormCS .inputBoxCS textarea,
+.contactFormCS .inputBoxCS input
 {
   width: 100%;
   padding: 5px 0;
@@ -964,7 +964,7 @@ button:hover {
   resize: none;
 }
 
-.contactForm span
+.contactFormCS span
 {
   position: absolute;
   left: 0;
@@ -976,10 +976,10 @@ button:hover {
   color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span
+.contactFormCS .inputBoxCS input:focus ~ span,
+.contactFormCS .inputBoxCS input:valid ~ span
+.contactFormCS .inputBoxCS textarea:focus ~ span,
+.contactFormCS .inputBoxCS textarea:valid ~ span
 {
   color: #e91e63;
   font-size: 12px;
@@ -987,7 +987,7 @@ button:hover {
 
 }
 
-.contactForm .inputBox input[type="submit"]
+.contactFormCS .inputBoxCS input[type="submit"]
 {
   width: 100px;
   background: #00bcd4;
@@ -1000,21 +1000,21 @@ button:hover {
 
 @media (max-width:991px)
 {
-  .contact
+  .contactCS
   {
       padding: 50px;
   }
-  .container
+  .containerCS
   {
       flex-direction: column;
   }
-  .container .contactInfo
+  .containerCS .contactInfoCS
   {
       margin-bottom: 40px;
       align-items: flex-start;
   }
-  .container .contactInfo,
-  .contactForm
+  .containerCS .contactInfoCS,
+  .contactFormCS
   {
    width: 100%;   
   }
