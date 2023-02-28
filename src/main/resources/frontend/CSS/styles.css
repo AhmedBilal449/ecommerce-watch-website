@@ -991,7 +991,7 @@ button:hover {
 .contactFormCS .inputBoxCS input[type="submit"]
 {
   width: 100px;
-  background: #00bcd4;
+  background: #333;
   color: #ffffff;
   border: none;
   cursor: pointer;
