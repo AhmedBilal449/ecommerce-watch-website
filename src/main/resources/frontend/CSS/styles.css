@@ -863,7 +863,7 @@ button:hover {
 {
   font-size: 36px;
   font-weight: 500;
-  color: #ffffff;
+  color: #333;
   
 }
 
@@ -1044,9 +1044,7 @@ button:hover {
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
-  background: -webkit-linear-gradient(right, #0c0a0a 10% ,#1950a3 90% );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #333;
 }
 
 .container-contact-and-about-us form{
