@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Audemars Piguet</title>
+    <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <div class="body-container-product">
+
+        <div class="product-container">
+            <div class="headerr">
+                <h1>Men's Watches</h1>
+                <p> Audemars Piguet</p>
+            </div>
+            <div class="filter-section">
+                <h2>Filter Products</h2>
+            
+                <div class="filter-container">
+                    <form id="filter-form">
+                        <div class="filter-option">
+                            <label for="price-range-filter">Price Range:</label>
+                            <select id="price-range-filter" name="price-range-filter">
+                                <option value="">All Prices</option>
+                                <option value="50-100">£50 - £100</option>
+                                <option value="100-200">£100 - £200</option>
+                                <option value="200-500">£200 - £500</option>
+                                <option value="500+">£500+</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <label for="sort-filter">Sort by:</label>
+                            <select id="sort-filter" name="sort-filter">
+                                <option value="default">Relevance</option>
+                                <option value="price-low-high">Price (Low to High)</option>
+                                <option value="price-high-low">Price (High to Low)</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <button type="button" onclick="filterProducts()">Filter</button>
+                        </div>
+                    </form>
+            
+                </div>
+                <div class="card-container">
+                    <a href="armani">
+                        <div class="p-armani-card">
+                            <img src="../Images/filtarmani.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="audemarspiguet">
+                        <div class="p-ap-card">
+                            <img src="../Images/filtap.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="cartier">
+                        <div class="p-cartier-card">
+                            <img src="../Images/filtcartier.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="patekphilippe">
+                        <div class="p-patek-card">
+                            <img src="../Images/filtpatek.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="rolex">
+                        <div class="p-rolex-card">
+                            <img src="../Images/filtrolex.jpg" alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="products">
+
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP1.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26240ST.OO.1320ST.05</h3>
+                        <span>£475.00</span>
+                    </div>
+                    <p> This 41 mm stainless steel Selfwinding Chronograph is endowed with the latest Royal Oak design evolution and encompasses a “Grande Tapisserie” dial in the iconic "Bleu Nuit, Nuage 50" hue.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP2.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26240OR.OO.1320OR.08</h3>
+                        <span>£449.99 </span>
+                    </div>
+                    <p> This 41 mm Selfwinding Chronograph marries 18-carat pink gold with a Khaki green dial with “Grande Tapisserie” pattern and khaki green counters. It is endowed with the Royal Oak design evolution debuted in 2022.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP3.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26240CE.OO.1225CE.01</h3>
+                        <span>£499.99 </span>
+                    </div>
+                    <p> This 41 mm Royal Oak Selfwinding Chronograph fully crafted in black ceramic and contrasted with subtle pink gold accents is endowed with the collection’s latest design evolution and “50-years” anniversary oscillating weight. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP4.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 15510OR.OO.D002CR.01</h3>
+                        <span>£549.99 </span>
+                    </div>
+                    <p> This 18-carat pink gold Royal Oak Selfwinding in 41 mm is endowed with the new design evolution and sports a black dial with “Grande Tapisserie” pattern, pink gold applied hour-markers and a matching alligator strap. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                       
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP5.jpg"alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26238OK.OO.A002CA.01</h3>
+                        <span>£520.00 </span>
+                    </div>
+                    <p> The new 42 mm Royal Oak Offshore iteration contrasts an 18-carat pink gold case with a black rubber bezel, a black Grande Tapisserie dial and a black interchangeable rubber strap for a sporty and elegant look. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP6.jpg"alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26227BC.SS.D326CR.01</h3>
+                        <span>£600.00 </span>
+                    </div>
+                    <p>While the Royal Oak Concept Flying Tourbillon's 18-carat white gold case sparks with brilliant-cut graded blue sapphires, the gold dial and movement components are set with brilliant-cut diamonds. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+    
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP7.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26425BC.ZZ.D002CA.02</h3>
+                        <span>£575.00 </span>
+                    </div>
+                    <p> This 18-carat white gold 43 mm Royal Oak Offshore encompasses a case, a bezel and a dial entirely paved with baguette-cut diamonds. The black rubber strap adds a sporty touch. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP8.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26589IO.OO.D056CA.01</h3>
+                        <span>£650.00 </span>
+                    </div>
+                    <p>The titanium case 44mm Royal Oak Concept Flying Tourbillon GMT iteration is topped off with a green ceramic bezel. The black architectural movement features green CVD-coloured inserts matching with the bezel’s hue.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/AP9.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Audemars Piguet 26283ST.OO.D002CA.01</h3>
+                        <span>£520.00 </span>
+                    </div>
+                    <p>Selfwinding chronograph with date display and small seconds at 6 o'clock. Stainless steel case, Black dial with “Méga Tapisserie” pattern, Arabic numerals and white gold Royal Oak hands with luminescent coating, black strap.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+            </div>
+
+              
+        </div>
+    </div>
+
+</body>
+
+</html>

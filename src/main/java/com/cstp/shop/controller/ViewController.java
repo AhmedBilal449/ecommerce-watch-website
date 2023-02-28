@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class ViewController
 {
-    @GetMapping("/login")
+    @GetMapping({"/login", "/"})
     public ModelAndView viewLogin()
     {
         ModelAndView mav = new ModelAndView("login");
@@ -29,14 +29,34 @@ public class ViewController
         return mav;
     }
 
-
-    @GetMapping("/")
-    public String viewTest()
-    {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-
-        if (auth.isAuthenticated()) return "Welcome "+auth.getPrincipal();
-
-        return "Not signed in";
+    @GetMapping("/audemarspiguet")
+    public ModelAndView viewAudemarspiguet() {
+        ModelAndView mav = new ModelAndView("audemarspiguet");
+        return mav;
     }
+
+    @GetMapping("/rolex")
+    public ModelAndView viewRolex() {
+        ModelAndView mav = new ModelAndView("rolex");
+        return mav;
+    }
+
+    @GetMapping("/cartier")
+    public ModelAndView viewCartier() {
+        ModelAndView mav = new ModelAndView("cartier");
+        return mav;
+    }
+
+    @GetMapping("/armani")
+    public ModelAndView viewArmani() {
+        ModelAndView mav = new ModelAndView("armani");
+        return mav;
+    }
+
+    @GetMapping("/patekphilippe")
+    public ModelAndView viewPatekPhilippe() {
+        ModelAndView mav = new ModelAndView("patekphilippe");
+        return mav;
+    }
+
 }

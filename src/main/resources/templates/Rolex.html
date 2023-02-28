@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Rolex</title>
+    <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <div class="body-container-product">
+
+        <div class="product-container">
+            <div class="headerr">
+                <h1>Men's Watches</h1>
+                <p> Rolex</p>
+            </div>
+            <div class="filter-section">
+                <h2>Filter Products</h2>
+            
+                <div class="filter-container">
+                    <form id="filter-form">
+                        <div class="filter-option">
+                            <label for="price-range-filter">Price Range:</label>
+                            <select id="price-range-filter" name="price-range-filter">
+                                <option value="">All Prices</option>
+                                <option value="50-100">£50 - £100</option>
+                                <option value="100-200">£100 - £200</option>
+                                <option value="200-500">£200 - £500</option>
+                                <option value="500+">£500+</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <label for="sort-filter">Sort by:</label>
+                            <select id="sort-filter" name="sort-filter">
+                                <option value="default">Relevance</option>
+                                <option value="price-low-high">Price (Low to High)</option>
+                                <option value="price-high-low">Price (High to Low)</option>
+                            </select>
+                        </div>
+            
+                        <div class="filter-option">
+                            <button type="button" onclick="filterProducts()">Filter</button>
+                        </div>
+                    </form>
+            
+                </div>
+                <div class="card-container">
+                    <a href="armani">
+                        <div class="p-armani-card">
+                            <img src="../Images/filtarmani.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="audemarspiguet">
+                        <div class="p-ap-card">
+                            <img src="../Images/filtap.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="cartier">
+                        <div class="p-cartier-card">
+                            <img src="../Images/filtcartier.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="patekphilippe">
+                        <div class="p-patek-card">
+                            <img src="../Images/filtpatek.png" alt="" />
+                        </div>
+                    </a>
+                    <a href="rolex">
+                        <div class="p-rolex-card">
+                            <img src="../Images/filtrolex.jpg" alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="products">
+
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex GMT Master II 126711chnr Root Beer</h3>
+                        <span>£375.00</span>
+                    </div>
+                    <p> THE OYSTER PERPETUAL GMT-MASTER II IN OYSTERSTEEL AND EVEROSE GOLD WITH AN OYSTER BRACELET. This model features a black dial and a two-colour Cerachrom bezel insert in brown and black ceramic. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex2..jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Day-Date 228239 Black Index 40mm</h3>
+                        <span>£324.99 </span>
+                    </div>
+                    <p> THE OYSTER PERPETUAL DAY-DATE 40 IN 18 CT WHITE GOLD WITH A BRIGHT BLACK DIAL, FLUTED BEZEL AND A PRESIDENT BRACELET. The Day-Date was the first watch to indicate the day of the week spelt out in full in 1956.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex3.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Datejust 126333 Black Index 41mm</h3>
+                        <span>£299.99 </span>
+                    </div>
+                    <p> THIS OYSTER PERPETUAL DATEJUST 41 IN OYSTERSTEEL AND YELLOW GOLD FEATURES A BLACK DIAL AND A JUBILEE BRACELET. The light reflections on the case sides and lugs highlight the elegant profile of the 41 mm Oyster case. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex4.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex GMT Master II 126710blro</h3>
+                        <span>£399.99 </span>
+                    </div>
+                    <p> THE OYSTER PERPETUAL GMT-MASTER II IN OYSTERSTEEL WITH A JUBILEE BRACELET. This model features a black dial and a two-colour Cerachrom bezel insert in red and blue ceramic. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                       
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex5.jpeg"alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Sky Dweller 326938 Black Index 42mm</h3>
+                        <span>£420.00 </span>
+                    </div>
+                    <p> THE OYSTER PERPETUAL SKY-DWELLER IN 18 CT YELLOW GOLD WITH A BRIGHT BLACK DIAL AND AN OYSTER BRACELET. This distinctive watch is characterized by its second time zone display on an off-centre disc on the dial.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex6.jpg"alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Cosmograph Daytona 116503-0011</h3>
+                        <span>£425.00 </span>
+                    </div>
+                    <p>THIS OYSTER PERPETUAL COSMOGRAPH DAYTONA IN OYSTERSTEEL AND YELLOW GOLD, WITH A BLACK, DIAMOND-SET DIAL AND AN OYSTER BRACELET, FEATURES A YELLOW GOLD BEZEL WITH ENGRAVED TACHYMETRIC SCALE. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+    
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex7.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Yacht-Master 116621 Black 40mm </h3>
+                        <span>£444.99 </span>
+                    </div>
+                    <p> THE OYSTER PERPETUAL YACHT-MASTER 40 IN OYSTERSTEEL AND EVEROSE GOLD WITH AN OYSTER BRACELET. This model features an intense black dial and a bidirectional rotatable bezel in Everose gold. </p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex8.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Datejust 126334 Blue Diamond Jubilee 41mm</h3>
+                        <span>£255.00 </span>
+                    </div>
+                    <p>THIS OYSTER PERPETUAL DATEJUST 41 IN OYSTERSTEEL AND WHITE GOLD FEATURES A BRIGHT BLUE, DIAMOND-SET DIAL AND A JUBILEE BRACELET. Its dial features diamonds in 18 ct gold settings.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+                </div>
+    
+                <div class="product-name">
+                    <div class="product-image">
+                        <img src="../images/rolex9.jpg" alt="">
+                    </div>
+                    <div class="product-price">
+                        <h3>Rolex Submariner 116610LV (hulk)</h3>
+                        <span>£499.99 </span>
+                    </div>
+                    <p>THE OYSTER PERPETUAL SUBMARINER DATE IN OYSTERSTEEL WITH A CERACHROM BEZEL INSERT IN GREEN CERAMIC AND A GREEN DIAL WITH LARGE LUMINESCENT HOUR MARKERS. It features a unidirectional rotatable bezel.</p>
+                    <div class="stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="buy"> 
+                        <i class="fas fa-network-wired"></i>
+                        <button>Add to basket</button>
+                    </div>
+            </div>
+
+              
+        </div>
+    </div>
+
+</body>
+
+</html>
