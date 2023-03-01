@@ -82,6 +82,6 @@ public class CartServiceImpl implements CartService {
         return products.entrySet().stream()
                 .map(entry -> entry.getKey().getPrice()*entry.getValue())
                 .reduce(Float::sum)
-                .orElse(0.0F);
+                .orElse(0.00F);
     }
 }

@@ -70,4 +70,9 @@ public class Product {
         return id.hashCode();
     }
 
+    public float getTotal(int quantity)
+    {
+        return price * quantity;
+    }
+
 }

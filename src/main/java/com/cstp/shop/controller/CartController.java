@@ -31,12 +31,6 @@ public class CartController {
         this.productService = productService;
     }
 
-    @GetMapping("/")
-    public String shoppingCart() {
-        System.out.println(cartService.getProductsInCart()+" total: "+ cartService.getTotal());
-        return "shoppingCart()";
-    }
-
     @GetMapping("/add/{productId}")
     public String addProductToCart(@PathVariable("productId") Long productId) {
         productService.findById(productId).ifPresent(cartService::addProduct);

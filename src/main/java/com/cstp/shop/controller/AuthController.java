@@ -18,6 +18,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -33,6 +34,7 @@ import com.cstp.shop.repository.RoleRepository;
 import com.cstp.shop.repository.UserRepository;
 import com.cstp.shop.security.jwt.JwtUtils;
 import com.cstp.shop.security.services.UserDetailsImpl;
+import org.springframework.web.servlet.ModelAndView;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -54,7 +56,7 @@ public class AuthController {
   JwtUtils jwtUtils;
 
   @PostMapping("/form/login")
-  public String formLogin(@Valid @ModelAttribute LoginDto loginDto, BindingResult result, Model model)
+  public ModelAndView formLogin(@Valid @ModelAttribute LoginDto loginDto, BindingResult result, Model model)
   {
     Authentication authentication = authenticationManager
             .authenticate(new UsernamePasswordAuthenticationToken(loginDto.getEmail(), loginDto.getPassword()));
@@ -70,7 +72,7 @@ public class AuthController {
             .collect(Collectors.toList());
 
 
-    return "Login successful";
+    return new ModelAndView("redirect:/products");
   }
 
   @PostMapping("/form/signup")
@@ -99,7 +101,7 @@ public class AuthController {
 
     userRepository.save(user);
 
-    return "Form processed";
+    return "User registered successfully!";
   }
 
 

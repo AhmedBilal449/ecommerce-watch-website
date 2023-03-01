@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Cart Page</title>
+        <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="Stylesheet" href="../CSS/styles_ali_temp.css">
+        <style>
+            td img {
+              max-width: 50px;
+              height: 50px;
+            }
+            td button {
+              color: black;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <div class="body-container-product">
+        <div class="bucket-container">
+            <div class="header">
+                <h1>Shopping Cart</h1>
+                <p> All Watches</p>
+            </div>
+    
+            <section id="cart-container" class="cart-container">
+                <table id="cart-table">
+                  <thead>
+                    <tr>
+                      <td>Image</td>
+                      <td>Product</td>
+                      <td>Price</td>
+                      <td>Quantity</td>
+                      <td>Total</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                      <tr th:each="item : ${cartItems}">
+                          <td><img th:src="${item.key.imgpath}"></td>
+                          <td th:text="${item.key.name}"></td>
+                          <td th:text="${item.key.price}"></td>
+                          <td th:text="${item.value}"></td>
+                          <td th:text="${item.key.price}"></td>
+                      </tr>
+
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="4" style="text-align: right">Total:</td>
+                      <td id="grand-total" th:text="|£${totalPrice}"></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </section>
+
+
+                <form th:action="@{/checkout}" method="GET">
+                    <button type="submit" class="checkout-btn">Checkout</button>
+                </form>
+            </div>
+          </div>
+    </div>
+</body>
+
+</html>
