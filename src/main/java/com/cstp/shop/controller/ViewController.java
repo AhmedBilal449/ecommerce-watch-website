@@ -35,7 +35,14 @@ public class ViewController
     @Autowired
     ProductRepository productRepository;
 
-    @GetMapping({"/login", "/"})
+    @GetMapping({"/", "/home"})
+    public ModelAndView viewHome()
+    {
+        ModelAndView mav = new ModelAndView("home");
+        return mav;
+    }
+
+    @GetMapping("/login")
     public ModelAndView viewLogin()
     {
         ModelAndView mav = new ModelAndView("login");
@@ -99,5 +106,19 @@ public class ViewController
         ModelAndView mav = new ModelAndView("patekphilippe");
         return mav;
     }
+
+//    @GetMapping("/about")
+//    public ModelAndView viewAbout()
+//    {
+//        ModelAndView mav = new ModelAndView("about");
+//        return mav;
+//    }
+//
+//    @GetMapping("/contact")
+//    public ModelAndView viewContact()
+//    {
+//        ModelAndView mav = new ModelAndView("contact");
+//        return mav;
+//    }
 
 }
