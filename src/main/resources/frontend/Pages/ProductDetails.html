@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Products Detials</title>
+    <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+    <main>
+    <div class="container-detials single-product">
+            <div class="row1">
+                <div class="col5">
+                    <img src="../images/rolex.jpg" width="100%"  id="img" alt="">
+                   <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="../images/rolex.jpg" width="100%"  class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/rolex4.jpg" width="100%"  class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/rolex8.jpg" width="100%"  class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/rolex6.jpg" width="100%"  class="small-img" alt="">
+                    </div>
+                   </div>
+                </div>
+            
+            </div>
+        </div>
+                <div class="parameter">
+                    <h6>silver</h6>
+                    <h1 class="display2">Rolex</h1>
+                    <p>MODEL: GMT Master II 126711chnr Root Beer </p>
+                    <hr>
+                    <div class="detail">
+                        <h5>MOVEMENT: <span>Eco-Drive H504</span></h5>
+                        <h5>CASE SIZE: <span>43mm</span></h5>
+                        <h5>MATERIAL: <span>Silver</span></h5>
+                        <h5>Product Information:<span>THE OYSTER PERPETUAL GMT-MASTER II IN OYSTERSTEEL AND EVEROSE GOLD WITH AN OYSTER BRACELET. This model features a black dial and a two-colour Cerachrom bezel insert in brown and black ceramic. </span></h5>
+                    </div>
+                    <hr>
+                    <div class="price">
+                        <h2><span><sup>£</sup></span>375</h2>
+                    </div> 
+                    <input type="number" value="1">
+                    <div class="cart">
+                        <div class="row">
+                            <button class="btn">ADD TO BASKET</button>
+                            <button class="btn"><i class="fa fa-heart"></i></button>
+                        </div>
+                    
+    </main>
+
+    <script>
+       var img = document.getElementById("img");
+       var Smallimg = document.getElementsByClassName("small-img");
+
+       Smallimg [0].onclick = function(){
+        img.src = Smallimg[0].src;
+       }
+       Smallimg [1].onclick = function(){
+        img.src = Smallimg[1].src;
+       }
+
+       Smallimg [2].onclick = function(){
+        img.src = Smallimg[2].src;
+       }
+
+       Smallimg [3].onclick = function(){
+        img.src = Smallimg[3].src;
+       }
+
+
+    </script>
+
+    
+  
+</body>
+
+</html>
