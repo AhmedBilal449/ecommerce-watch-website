@@ -840,6 +840,127 @@ button:hover {
   }
 }
 
+/*Products detials*/
+
+main{
+  padding-top: 10px;
+  background: white;
+}
+.container-detials{
+  max-width: 500px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+.row1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-product{
+  margin-top: 80px;
+}
+
+.small-img-row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.col5 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.single-product .col5 img{
+  padding: 0;
+}
+
+.single-product .col5{
+  padding: 20px;
+}
+
+hr{
+  background: #e1e1e1;
+}
+
+.parameter {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.parameter h6{
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.parameter h1{
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-top: -20px;
+}
+.parameter p{
+  color: grey;
+}
+.parameter h5{
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.parameter h5 span{
+  letter-spacing: 0;
+  color: #a8a8a8;
+  font-size: 0.8em;
+}
+
+.parameter h2{
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.parameter h2 span{
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.parameter input{
+ width: 50px;
+ height: 40px;
+ padding-left: 10px;
+ font-size: 20px;
+ margin-left: 10px;
+ border: 2 px solid #474747;
+}
+
+.cart{
+  margin-top: 20px;
+}
+
+.cart button{
+  padding: 15px 20px;
+  background: #474747;
+  color: white;
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+.cart button:first-of-type{
+  padding: 15px 100px;
+  background: #474747;
+  color: white;
+  border-radius: 0;
+}
+
+
 /* Contact Us  Page*/
 
 
