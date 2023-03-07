@@ -847,7 +847,7 @@ main{
   background: white;
 }
 .container-detials{
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
   padding-left: 25px;
   padding-right: 20px;
@@ -891,15 +891,10 @@ hr{
   background: #e1e1e1;
 }
 
-.parameter {
+.col5 {
   flex-basis: 50%;
   min-width: 300px;
-}
-
-.parameter h6{
-  font-size: 2em;
-  font-weight: 400;
-  letter-spacing: 3px;
+ 
 }
 
 .parameter h1{
@@ -951,6 +946,7 @@ hr{
   color: white;
   border-radius: 0;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .cart button:first-of-type{
