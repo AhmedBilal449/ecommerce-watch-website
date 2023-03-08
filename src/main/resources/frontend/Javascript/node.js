@@ -5,7 +5,7 @@ function filterProducts() {
   const products = document.querySelectorAll(".product-name");
 
   // Reset to original products if "relevance" is selected
-  if (sortFilter === "relevance") {
+  /*if (sortFilter === "relevance") {
     const sortedProducts = originalProducts.sort((a, b) => {
       const aName = a.querySelector("h3").textContent.toLowerCase();
       const bName = b.querySelector("h3").textContent.toLowerCase();
@@ -17,6 +17,10 @@ function filterProducts() {
     }
 
     return;
+  }*/
+
+  if (sortFilter === "relevance") {
+    location.reload();
   }
 
   for (let i = 0; i < products.length; i++) {
