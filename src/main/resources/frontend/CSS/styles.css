@@ -956,6 +956,56 @@ hr{
   border-radius: 0;
 }
 
+/*Basket Page*/
+
+.bucket-container {
+  margin-bottom: 35px;
+}
+
+.body-container-bucket {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 35px;
+  margin: 0 auto;
+}
+
+.cart-container {
+  margin-top: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-table thead td {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+#cart-table tbody td {
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#cart-table tfoot {
+  border-top: 2px solid #dddddd;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#cart-table tfoot td {
+  padding: 8px;
+}
+
+#grand-total {
+  text-align: center;
+}
 
 /* Contact Us  Page*/
 
@@ -1165,6 +1215,89 @@ hr{
   color: #333;
 }
 
+/* Checkout Page */
+.checkout-container {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+
+.checkout-container h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: Black;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.checkout-container > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+}
+
+.checkout-form {
+  margin-top: 35px;
+  padding: 15px;
+  border: 4px dashed #e0e0e0;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-control label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 205px;
+}
+
+.form-control-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.proceed-btn,
+.checkout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 235px;
+  height: 50px;
+  background: #000000;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.proceed-btn:hover {
+  transform: scale(1.12);
+}
 
 @media (max-width: 600px) {
 .container-contact-us .text{
