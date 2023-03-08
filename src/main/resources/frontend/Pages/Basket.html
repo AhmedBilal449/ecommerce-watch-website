@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Cart Page</title>
+        <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="Stylesheet" href="../CSS/styles.css">
+        <style>
+            td img {
+              max-width: 50px;
+              height: 50px;
+            }
+            td button {
+              color: black;
+            }
+        </style>
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <div class="container-fluid">
+            <a href="#" class="logo"><img src="../Images/Logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Product.html">Watches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="Basket.html"><button class="btn btn-sm btn-light"><i class="fa fa-shopping-cart"></i> Cart</button></a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-container-product">
+        <div class="bucket-container">
+            <div class="header">
+                <h1>Shopping Cart</h1>
+                <p> All Watches</p>
+            </div>
+    
+            <section id="cart-container" class="cart-container">
+                <table id="cart-table">
+                  <thead>
+                    <tr>
+                      <td class="">Remove</td>
+                      <td>Image</td>
+                      <td>Product</td>
+                      <td>Price</td>
+                      <td>Qurantity</td>
+                      <td>Total</td>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="5" style="text-align: right">Total:</td>
+                      <td id="grand-total">£0.00</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </section>
+      
+              <a class="checkout-btn" href="./Checkout.html">Checkout</a>
+            </div>
+          </div>
+          <script>
+            window.onload = function () {
+              const cartTable = document.querySelector('#cart-table tbody');
+              const cartItems = JSON.parse(localStorage.getItem('cartItems'));
+              cartItems.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+          <td><button class="remove">X</button></td>
+          <td><img src="${item.imageSrc}"  alt="${item.name}"></td>
+          <td >${item.name}</td>
+          <td class="product-prices">${item.price}</td>
+          <td class="product-quantity">${item.quantity}</td>
+          <td class="product-total">${item.price}</td>
+        `;
+                cartTable.appendChild(row);
+              });
+              updateGrandTotal();
+      
+              // Get the table body element
+              //var tableBody = document.querySelector("#cart-table tbody");
+      
+              // Add a click event listener to the table body element
+              cartTable.addEventListener('click', function (event) {
+                // Check if the clicked element is a button with class "remove-product"
+                if (event.target.classList.contains('remove')) {
+                  // Get the table row element
+                  var tableRow = event.target.closest('tr');
+      
+                  // Remove the table row element from the table body
+                  cartTable.removeChild(tableRow);
+      
+                  // Update the grand total
+                  updateGrandTotal();
+                }
+              });
+      
+              // Function to update the grand total
+              function updateGrandTotal() {
+                // Get all the table rows
+                var tableRows = document.querySelectorAll('#cart-table tbody tr');
+      
+                // Initialize the grand total to zero
+                var grandTotal = 0;
+      
+                // Loop through the table rows and calculate the grand total
+                for (var i = 0; i < tableRows.length; i++) {
+                  // Get the price and quantity values from the table row
+                  var price = parseFloat(
+                    tableRows[i].querySelector('.product-prices').textContent.slice(1)
+                  );
+                  var quantity = parseInt(
+                    tableRows[i].querySelector('.product-quantity').innerHTML
+                  );
+      
+                  // Calculate the total for the table row
+                  var total = price * quantity;
+      
+                  // Update the total value in the table row
+                  tableRows[i].querySelector('.product-total').textContent =
+                    '£' + total.toFixed(2);
+      
+                  // Add the total to the grand total
+                  grandTotal += total;
+                }
+      
+                // Update the grand total in the table footer
+                document.querySelector('#grand-total').textContent =
+                  '£' + grandTotal.toFixed(2);
+              }
+            };
+          </script>
+
+    </div>
+
+
+</body>
+
+</html>

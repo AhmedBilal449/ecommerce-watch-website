@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link
+      rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="Stylesheet" href="../CSS/styles.css" />
+  </head>
+  
+  <body>
+    
+    <main>
+      <div class="checkout-container">
+        <h2>Checkout Form</h2>
+        <img src="../Images/credit-card-trimmy.png" alt="Credit Card" />
+        <form class="checkout-form">
+          <div class="form-control">
+            <label for="cardNumber">Card Number</label>
+            <input
+              type="text"
+              id="cardNumber"
+              placeholder="**** **** **** ****"
+            />
+          </div>
+          <div class="form-control">
+            <label for="cardName">Card Holder Name</label>
+            <input type="text" id="cardName" placeholder="John Doe" />
+          </div>
+          <div class="form-control-flex">
+            <div class="form-control">
+              <label for="cardExpiry">Card Expiry</label>
+              <input type="text" id="cardExpiry" placeholder="MM/YY" />
+            </div>
+            <div class="form-control">
+              <label for="cardCvv">Card CVV</label>
+              <input type="text" id="cardCvv" placeholder="***" />
+            </div>
+          </div>
+          <button class="proceed-btn">Proceed</button>
+        </form>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    const cardNumber = document.getElementById('cardNumber');
+    const cardName = document.getElementById('cardName');
+    const cardExpiry = document.getElementById('cardExpiry');
+    const cardCvv = document.getElementById('cardCvv');
+    const proceedBtn = document.querySelector('.proceed-btn');
+
+    // Proceed Button
+
+    proceedBtn.addEventListener('click', e => {
+      e.preventDefault();
+      if (
+        cardNumber.value === '' ||
+        cardName.value === '' ||
+        cardExpiry.value === '' ||
+        cardCvv.value === ''
+      ) {
+        alert('Please fill all the fields');
+      } else if (cardNumber.value.length < 16) {
+        alert('Please enter a valid card number');
+      } else if (cardName.value.length < 3) {
+        alert('Please enter a valid card holder name');
+      } else if (cardExpiry.value.length < 5) {
+        alert('Please enter a valid card expiry date');
+      } else if (cardCvv.value.length < 3) {
+        alert('Please enter a valid card cvv');
+      } else {
+        alert('Payment Successful');
+      }
+    });
+  </script>
+</html>
