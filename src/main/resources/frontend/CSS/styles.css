@@ -956,6 +956,56 @@ hr{
   border-radius: 0;
 }
 
+/*Basket Page*/
+
+.bucket-container {
+  margin-bottom: 35px;
+}
+
+.body-container-bucket {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 35px;
+  margin: 0 auto;
+}
+
+.cart-container {
+  margin-top: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-table thead td {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+#cart-table tbody td {
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#cart-table tfoot {
+  border-top: 2px solid #dddddd;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#cart-table tfoot td {
+  padding: 8px;
+}
+
+#grand-total {
+  text-align: center;
+}
 
 /* Contact Us  Page*/
 
