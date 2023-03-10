@@ -1034,7 +1034,7 @@ hr{
 {
   font-size: 36px;
   font-weight: 500;
-  color: #333;
+  color: rgb(26, 79, 179);
   
 }
 
@@ -1075,7 +1075,7 @@ hr{
 {
   min-width: 60px;
   height: 60px;
-  background: #07124e;
+  background: rgb(26, 79, 179);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1110,7 +1110,7 @@ hr{
 .contactFormCS h2
 {
   font-size: 30px;
-  color: #333;
+  color: rgb(26, 79, 179);
   font-weight: 500;
 }
 
@@ -1144,7 +1144,7 @@ hr{
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #666;
+  color: rgb(26, 79, 179);
 }
 
 .contactFormCS .inputBoxCS input:focus ~ span,
