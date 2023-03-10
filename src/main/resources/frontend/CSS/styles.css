@@ -1018,8 +1018,10 @@ hr{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(src/main/resources/frontend/Images/background.jpg);
+  background-image: url(/Users/aaq1bm/Documents/GitHub/CS2TP-TP2-Group-7/src/main/resources/frontend/Images/background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .contactCS .contentCS 
@@ -1040,7 +1042,7 @@ hr{
 {
   font-size: 12px;
   font-weight: 300;
-  color: #ffffff;
+  color: #000000;
   
 }
 
@@ -1073,7 +1075,7 @@ hr{
 {
   min-width: 60px;
   height: 60px;
-  background: #ffffff;
+  background: #17bdff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1087,7 +1089,7 @@ hr{
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #ffffff;
+  color: #000000;
   flex-direction: column;
   font-weight: 300;
 }
