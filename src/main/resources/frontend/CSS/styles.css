@@ -1018,7 +1018,7 @@ hr{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(/Users/aaq1bm/Documents/GitHub/CS2TP-TP2-Group-7/src/main/resources/frontend/Images/background.jpg);
+  background-image: url(../Images/background1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1042,7 +1042,7 @@ hr{
 {
   font-size: 12px;
   font-weight: 300;
-  color: #000000;
+  color: #ffffff;
   
 }
 
@@ -1075,7 +1075,7 @@ hr{
 {
   min-width: 60px;
   height: 60px;
-  background: #17bdff;
+  background: #07124e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1089,7 +1089,7 @@ hr{
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
   flex-direction: column;
   font-weight: 300;
 }
@@ -1097,7 +1097,7 @@ hr{
 .contactCS .contactInfoCS .boxCS .textCS h3
 {
   font-weight: 500;
-  color: rgb(8, 25, 31);
+  color: rgb(255, 255, 255);
 }
 
 .contactFormCS
@@ -1198,7 +1198,10 @@ hr{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
+  background-image: url(../Images/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .container-contact-and-about-us{
