@@ -1018,7 +1018,8 @@ hr{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
+  background: url(src/main/resources/frontend/Images/background.jpg);
+  background-size: cover;
 }
 
 .contactCS .contentCS 
