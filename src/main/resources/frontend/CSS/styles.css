@@ -1105,6 +1105,8 @@ hr{
   width: 40%;
   padding: 40px;
   background: #ffffff;
+  border-radius: 25px;
+  border: 2px rgb(26, 79, 179);
 }
 
 .contactFormCS h2
@@ -1169,6 +1171,23 @@ hr{
   font-size: 18px;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.contactCS .contentCS h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-family: "Ruda", sans-serif !important;
+}
+
 @media (max-width:991px)
 {
   .contactCS
@@ -1191,6 +1210,71 @@ hr{
   }
 }
 
+/* Contact us form 2*/
+
+.contactForm2
+{
+  padding: 50px;
+  width: 50%;
+  padding: 40px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px rgb(26, 79, 179);
+}
+
+.containerCS .contactForm2 h2
+{
+  font-size: 30px;
+  color: rgb(26, 79, 179);
+  font-weight: 500;
+}
+
+.contactForm2 p {
+
+  font-size: 20px;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.contactForm2 h2{
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-family: "Ruda", sans-serif !important;
+}
+
+@media (max-width:991px)
+{
+  .contactCS
+  {
+      padding: 50px;
+  }
+  .containerCS
+  {
+      flex-direction: column;
+  }
+  .containerCS .contactInfoCS
+  {
+      margin-bottom: 40px;
+      align-items: flex-start;
+  }
+  .containerCS .contactInfoCS,
+  .contactForm2
+  {
+   width: 90%;   
+  }
+}
+
 /* About Us  Page*/
 
 .containerAS{
@@ -1202,6 +1286,7 @@ hr{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  
 }
 
 .container-contact-and-about-us{
@@ -1212,13 +1297,33 @@ hr{
   padding: 25px 40px 10px 50px;
   box-shadow: 0 0px 10px rgba(0,0,0,5);
   perspective: 2700px;
+  border-radius: 25px;
+  border: 2px rgb(26, 79, 179);
 }
 .container-contact-and-about-us .text{
   font-size: 35px;
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
+  color: rgb(26, 79, 179);;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.container-contact-and-about-us .text{
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-family: "Ruda", sans-serif !important;
+
 }
 
 /* Checkout Page */
