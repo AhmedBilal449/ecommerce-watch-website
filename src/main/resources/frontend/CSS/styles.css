@@ -1325,3 +1325,83 @@ hr{
   
     width: 100%;
   }
+
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .table-container {
+    width: 100%;
+    max-width: 1268px;
+    height: 100%;
+    max-height: 70vh;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+  }
+  
+  select {
+    background: transparent;
+    padding: 3px 5px;
+    border: 1px solid gray;
+    width: 100px;
+    cursor: pointer;
+    outline: transparent;
+  }
+  
+  option {
+    padding: 3px 5px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table i {
+    color: red;
+    font-size: 20px;
+  }
+  
+  tr {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  th {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  td {
+    border-bottom: 1px solid gray;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  tr:nth-child(0):hover {
+    background-color: black;
+  }
+  
+  tr:hover {
+    background-color: #f0f1f3;
+    cursor: pointer;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 760px) {
+    .table-container {
+      overflow-x: scroll;
+    }
+  }
+  
