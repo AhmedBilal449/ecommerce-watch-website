@@ -948,9 +948,17 @@ hr{
   padding: 15px 20px;
   background: #474747;
   color: white;
-  border-radius: 0;
+  border-radius: 7px;
   margin-left: 10px;
   margin-bottom: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cart button:hover{
+  box-shadow: 0 0 10px 0px black ;
+  transform: scale(1.1);
 }
 
 .cart button:first-of-type{
