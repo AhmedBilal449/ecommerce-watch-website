@@ -1059,10 +1059,7 @@ hr{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../Images/background1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-color:rgb(255, 255, 255);
 }
 
 .contactCS .contentCS 
@@ -1075,7 +1072,7 @@ hr{
 {
   font-size: 36px;
   font-weight: 500;
-  color: rgb(26, 79, 179);
+  color: rgb(5, 7, 10);
   
 }
 
@@ -1083,7 +1080,7 @@ hr{
 {
   font-size: 12px;
   font-weight: 300;
-  color: #ffffff;
+  color: #000000;
   
 }
 
@@ -1116,7 +1113,7 @@ hr{
 {
   min-width: 60px;
   height: 60px;
-  background: rgb(26, 79, 179);
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1130,7 +1127,7 @@ hr{
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #ffffff;
+  color: #000000;
   flex-direction: column;
   font-weight: 300;
 }
@@ -1138,7 +1135,7 @@ hr{
 .contactCS .contactInfoCS .boxCS .textCS h3
 {
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .contactFormCS
@@ -1147,13 +1144,14 @@ hr{
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
-  border: 2px rgb(26, 79, 179);
+  border: 2px rgb(0, 0, 0);
+  box-shadow: 10px 0 50px -2px #888;
 }
 
 .contactFormCS h2
 {
   font-size: 30px;
-  color: rgb(26, 79, 179);
+  color: rgb(0, 0, 0);
   font-weight: 500;
 }
 
@@ -1187,7 +1185,7 @@ hr{
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: rgb(26, 79, 179);
+  color: rgb(0, 0, 0);
 }
 
 .contactFormCS .inputBoxCS input:focus ~ span,
