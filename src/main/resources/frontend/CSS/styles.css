@@ -1367,12 +1367,6 @@ hr{
   color: black;
 }
 
-.aboutUsimg {
-  width:40%;
-  margin-right: 40px;
-
-}
-
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -1397,11 +1391,6 @@ hr{
   {
   padding: 60px 20px;
   }
-  .aboutUsimg{
-  visibility: hidden;
-  }
-
-  
 }
 
 /* Checkout Page */
