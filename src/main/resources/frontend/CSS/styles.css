@@ -1321,7 +1321,7 @@ hr{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url(../Images/background1.jpg);
+  /*background-image: url(../Images/background1.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1344,7 +1344,7 @@ hr{
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
-  color: rgb(26, 79, 179);;
+  color: black;
 }
 
 @keyframes slidein {
