@@ -1068,19 +1068,19 @@ hr{
   text-align: center;
 }
 
-.contactCS .contentCS h2
+.contactCS .contentCS h1
 {
-  font-size: 36px;
-  font-weight: 500;
-  color: rgb(5, 7, 10);
+  font-size: 50px;
+  text-transform: uppercase;
+  color: Black;
   
 }
 
 .contactCS .contentCS p
 {
-  font-size: 12px;
   font-weight: 300;
-  color: #000000;
+  font-size: 15px;
+  color: black;
   
 }
 
@@ -1221,7 +1221,7 @@ hr{
     width: 100%;
   }
 }
-.contactCS .contentCS h2 {
+.contactCS .contentCS h1 {
   animation-duration: 3s;
   animation-name: slidein;
   font-family: "Ruda", sans-serif !important;
