@@ -621,6 +621,36 @@ width:50%;
     color: black;
 }
 
+.headerr p1{
+  font-size: 15px;
+  color: black;
+}
+
+p1{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(154, 236, 154);
+  color: #fff;
+  flex: 1;
+}
+@keyframes bounce {
+  from {
+    margin-right: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+.headerr p1 {
+  animation-duration: 1s;
+  animation-name: bounce;
+  font-family: "Ruda", sans-serif !important;
+}
+
 .products{
     width: 100%;
     align-self: center;
