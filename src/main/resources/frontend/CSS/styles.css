@@ -1276,6 +1276,19 @@ hr{
 
 }
 
+.containerCS .ContacUs2Button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+  text-decoration:none;
+}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
