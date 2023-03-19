@@ -43,6 +43,8 @@ public class Product {
     @NotNull
     private int stock;
 
+    private int rating;
+
     public Product() {
     }
 

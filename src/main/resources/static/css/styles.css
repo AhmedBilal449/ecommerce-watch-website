@@ -383,7 +383,7 @@ button:after {
 }
 
 .card4 h3{
-  transform: translate(5%, 580%);
+  transform: translate(10%, 240%);
 }
 
 .card5{
@@ -393,7 +393,7 @@ button:after {
 }
 
 .card5 h3{
-  transform: translate(5%, 515%);
+  transform: translate(10%, 245%);
 }
 
 .video-container2 {
@@ -605,6 +605,7 @@ width:50%;
 }
 
 .headerr{
+  margin-top: 100px;
     width: 100%;
     text-align: center;
 }
@@ -618,6 +619,35 @@ width:50%;
 .headerr p{
     font-size: 20px;
     color: black;
+}
+
+.headerr p1{
+  font-size: 15px;
+  color: black;
+}
+
+p1{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(154, 236, 154);
+  color: #fff;
+  flex: 1;
+}
+.headerr p1 {
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 3;
+  }
 }
 
 .products{
@@ -839,18 +869,485 @@ button:hover {
   }
 }
 
+/*Products detials*/
 
-/* Contact and About Us  Page*/
+main{
+  padding-top: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-detials{
+  max-width: 900px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+}
 
-.body-container-contact-and-about-us{
+.row1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-product{
+  margin-top: 80px;
+}
+
+.small-img-row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.col5 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.small-img-col{
+  flex-basis: 100%;
+  cursor: pointer;
+}
+
+.single-product .col5 img{
+padding: auto;
+
+}
+
+.single-product .col5{
+  padding: 20px;
+}
+
+hr{
+  background: #e1e1e1;
+}
+
+.col5 {
+  flex-basis: 50%;
+  min-width: 300px;
+ 
+}
+
+.parameter h1{
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-top: -20px;
+}
+.parameter p{
+  color: grey;
+}
+.parameter h5{
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.parameter h5 span{
+  letter-spacing: 0;
+  color: #a8a8a8;
+  font-size: 0.8em;
+}
+
+.parameter h2{
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.parameter h2 span{
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.parameter input{
+ width: 50px;
+ height: 40px;
+ padding-left: 10px;
+ font-size: 20px;
+ margin-left: 10px;
+ border: 2 px solid #474747;
+}
+
+.cart{
+  margin-top: 20px;
+}
+
+.cart button{
+  padding: 15px 20px;
+  background: #474747;
+  color: white;
+  border-radius: 7px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cart button:hover{
+  box-shadow: 0 0 10px 0px black ;
+  transform: scale(1.1);
+}
+
+.cart button:first-of-type{
+  padding: 15px 100px;
+  background: #474747;
+  color: white;
+  border-radius: 0;
+}
+
+/*Basket Page*/
+
+.bucket-container {
+  margin-bottom: 35px;
+}
+
+.body-container-bucket {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 35px;
+  margin: 0 auto;
+}
+
+.cart-container {
+  margin-top: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-table thead td {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+#cart-table tbody td {
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#cart-table tfoot {
+  border-top: 2px solid #dddddd;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#cart-table tfoot td {
+  padding: 8px;
+}
+
+#grand-total {
+  text-align: center;
+}
+
+/* Contact Us  Page*/
+
+
+.contactCS{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:rgb(255, 255, 255);
+}
+
+.contactCS .contentCS 
+{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contactCS .contentCS h1
+{
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: black;
+  
+}
+
+.contactCS .contentCS p
+{
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+  
+}
+
+.containerCS 
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
+.containerCS .contactInfoCS
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column ;
+  
+}
+
+.contactCS .contactInfoCS .boxCS 
+{
+ position: relative;
+ padding: 20px 0;
+ display: flex; 
+}
+
+.contactCS .contactInfoCS .boxCS .iconCS
+{
+  min-width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+
+}
+
+.contactCS .contactInfoCS .boxCS .textCS 
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #000000;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contactCS .contactInfoCS .boxCS .textCS h3
+{
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.contactFormCS
+{
+  width: 40%;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  border: 2px rgb(0, 0, 0);
+  box-shadow: 10px 0 50px -2px #888;
+}
+
+.contactFormCS h2
+{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.contactFormCS .inputBoxCS 
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.contactFormCS .inputBoxCS textarea,
+.contactFormCS .inputBoxCS input
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactFormCS span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+.contactFormCS .inputBoxCS input:focus ~ span,
+.contactFormCS .inputBoxCS input:valid ~ span,
+.contactFormCS .inputBoxCS textarea:focus ~ span,
+.contactFormCS .inputBoxCS textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+
+}
+
+.contactFormCS .inputBoxCS input[type="submit"]
+{
+  width: 100px;
+  background: #333;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.contactCS .contentCS h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-family: "Ruda", sans-serif !important;
+}
+
+@media (max-width:991px)
+{
+  .contactCS
+  {
+      padding: 50px;
+  }
+  .containerCS
+  {
+      flex-direction: column;
+  }
+  .containerCS .contactInfoCS
+  {
+      margin-bottom: 40px;
+      align-items: flex-start;
+  }
+  .containerCS .contactInfoCS,
+  .contactFormCS
+  {
+   width: 100%;   
+  }
+}
+
+/* Contact us form 2*/
+
+.contactForm2
+{
+  padding: 50px;
+  width: 50%;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  border: 2px rgb(0, 0, 0);
+  box-shadow: 10px 0 50px -2px #888;
+  text-align: center;
+}
+
+.containerCS .contactForm2 h2{
+ font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.contactForm2 p {
+
+  font-size: 20px;
+
+}
+
+.containerCS .ContacUs2Button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+  text-decoration:none;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.contactForm2 h2{
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-family: "Ruda", sans-serif !important;
+}
+
+@media (max-width:991px)
+{
+  .contactCS
+  {
+      padding: 50px;
+  }
+  .containerCS
+  {
+      flex-direction: column;
+  }
+  .containerCS .contactInfoCS
+  {
+      margin-bottom: 40px;
+      align-items: flex-start;
+  }
+  .containerCS .contactInfoCS,
+  .contactForm2
+  {
+   width: 90%;   
+  }
+}
+
+/* About Us  Page*/
+
+.aboutUs{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(115deg, #000 , #ffffff 5%,#1950a3 75%, #000 ) ;
+  /*background-image: url(../Images/background1.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
 }
 
-.container-contact-and-about-us{
+.container-about-us {
   position: relative;
   max-width: 800px;
   width: 100%;
@@ -858,114 +1355,128 @@ button:hover {
   padding: 25px 40px 10px 50px;
   box-shadow: 0 0px 10px rgba(0,0,0,5);
   perspective: 2700px;
+  border-radius: 25px;
+  border: 2px rgb(26, 79, 179);
 }
-.container-contact-and-about-us .text{
-  font-size: 35px;
+.container-about-us  .text{
+  font-size: 50px;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
-  background: -webkit-linear-gradient(right, #0c0a0a 10% ,#1950a3 90% );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: black;
 }
 
-.container-contact-and-about-us form{
-padding: 30px 0 0 0;
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-.container-contact-and-about-us form .form-row{
-display: flex;
-margin: 32px 0;
+.container-about-us .text{
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-family: "Ruda", sans-serif !important;
+
 }
-form .form-row .input-data{
-width: 100%;
-height: 40px;
-margin: 0 20px;
-position: relative;
+
+@media (max-width:991px)
+{
+ .aboutUs
+  {
+  padding: 60px 20px;
+  }
 }
-form .form-row .textarea{
-height: 70px;
+
+/* Checkout Page */
+.checkout-container {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-top: 35px;
 }
-.input-data input,
-.textarea textarea{
-display: block;
-width: 100%;
-height: 100%;
-border: none;
-font-size: 17px;
-border-bottom: 2px solid rgba(0,0,0, 0.12);
+
+.checkout-container h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: Black;
+  text-align: center;
+  margin-bottom: 25px;
 }
-.input-data input:focus ~ label, .textarea textarea:focus ~ label,
-.input-data input:valid ~ label, .textarea textarea:valid ~ label{
-transform: translateY(-20px);
-font-size: 14px;
-color: #3498db;
+
+.checkout-container > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
 }
-.textarea textarea{
-resize: none;
-padding-top: 10px;
+
+.checkout-form {
+  margin-top: 35px;
+  padding: 15px;
+  border: 4px dashed #e0e0e0;
 }
-.input-data label{
-position: absolute;
-pointer-events: none;
-bottom: 10px;
-font-size: 16px;
-transition: all 0.3s ease;
+
+.form-control {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.textarea label{
-width: 100%;
-bottom: 40px;
-background: #fff;
+
+.form-control label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 205px;
 }
-.input-data .underline{
-position: absolute;
-bottom: 0;
-height: 2px;
-width: 100%;
+
+.form-control-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.input-data .underline:before{
-position: absolute;
-content: "";
-height: 2px;
-width: 100%;
-background: #3498db;
-transform: scaleX(0);
-transform-origin: center;
-transition: transform 0.3s ease;
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
-.input-data input:focus ~ .underline:before,
-.input-data input:valid ~ .underline:before,
-.textarea textarea:focus ~ .underline:before,
-.textarea textarea:valid ~ .underline:before{
-transform: scale(1);
+
+.proceed-btn,
+.checkout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 235px;
+  height: 50px;
+  background: #000000;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
 }
-.submit-btn .input-data{
-overflow: hidden;
-height: 45px!important;
-width: 25%!important;
+
+.proceed-btn:hover {
+  transform: scale(1.12);
 }
-.submit-btn .input-data .inner{
-height: 100%;
-width: 300%;
-position: absolute;
-left: -100%;
-background: -webkit-linear-gradient(right, #000000 ,#1950a3 );
-transition: all 0.4s;
-}
-.submit-btn .input-data:hover .inner{
-left: 0;
-}
-.submit-btn .input-data input{
-background: none;
-border: none;
-color: #fff;
-font-size: 17px;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 1px;
-cursor: pointer;
-position: relative;
-z-index: 2;
-}
+
 @media (max-width: 600px) {
 .container-contact-us .text{
   font-size: 40px;
@@ -973,17 +1484,17 @@ z-index: 2;
 .container-contact-us form{
   padding: 50px 0 0 0;
 }
-.container-contact-us form .form-row{
-  display: block;
-}
-form .form-row .input-data{
-  margin: 60px 0!important;
-}
-.submit-btn .input-data{
-  top: -20px;
-  width: 40%!important;
-  height: 1000%!important;
-  right: -75px;
-}
 
 }
+
+.location{
+  width: 100%;
+  margin: auto;
+  padding-top: 20px 0;
+  }
+  
+  .location iframe{
+  
+    width: 100%;
+  }
+

@@ -1,7 +1,4 @@
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'brand_goes_here', 'image_path_goes_here', 'name_goes_here', 'price_here', 'stock_here', 'rating_here', 'description_here');
-
-// ARMANI //
+# ARMANI
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
 'ARMANI', 'images/armani1.jpg', 'Emporio Armani AR2448 Watch', '98.99', '5000', '5', "A stylish Emporio Armani watch for men, in high-shine stainless steel with a brushed finishalong the strap edge links. With a sophisticated shimmering blue dial, featuring chronographsub-dials and a date window.");
@@ -30,65 +27,65 @@ INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
 'ARMANI', 'images/armani9.jpg', 'Emporio Armani AR1786 Watch', '149.99', '5000', '5', "Arrive on time with this classic watch from Emporio Armani. The stainless steel case features a mother of pearl dial with roman numeral hour markers and a date window for added functionality.");
 
-// AUDEMARS_PIGUET //
+# AUDEMARS_PIGUET
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'AUDEMARS_PIGUET', 'images/AP1.jpg', 'Audemars Piguet 26240ST.OO.1320ST.05', '475.00', '5000', '5', "This 41 mm stainless steel Selfwinding Chronograph is endowed with the latest Royal Oak design evolution and encompasses a “Grande Tapisserie” dial in the iconic "Bleu Nuit, Nuage 50" hue.");
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
+'AUDEMARS_PIGUET', 'images/AP1.jpg', 'Audemars Piguet 26240ST.OO.1320ST.05', '475.00', '5000', '5', "This 41 mm stainless steel Selfwinding Chronograph is endowed with the latest Royal Oak design evolution and encompasses a \“Grande Tapisserie\” dial in the iconic \"Bleu Nuit, Nuage 50\" hue.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'AUDEMARS_PIGUET', 'images/AP2.jpg', 'Audemars Piguet 26240OR.OO.1320OR.08', '449.99', '5000', '5', "This 41 mm Selfwinding Chronograph marries 18-carat pink gold with a Khaki green dial with “Grande Tapisserie” pattern and khaki green counters. It is endowed with the Royal Oak design evolution debuted in 2022.");
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
+'AUDEMARS_PIGUET', 'images/AP2.jpg', 'Audemars Piguet 26240OR.OO.1320OR.08', '449.99', '5000', '5', "This 41 mm Selfwinding Chronograph marries 18-carat pink gold with a Khaki green dial with \“Grande Tapisserie\” pattern and khaki green counters. It is endowed with the Royal Oak design evolution debuted in 2022.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'AUDEMARS_PIGUET', 'images/AP3.jpg', 'Audemars Piguet 26240CE.OO.1225CE.01', '499.99', '5000', '4.5', "This 41 mm Royal Oak Selfwinding Chronograph fully crafted in black ceramic and contrasted with subtle pink gold accents is endowed with the collection’s latest design evolution and “50-years” anniversary oscillating weight.");
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
+'AUDEMARS_PIGUET', 'images/AP3.jpg', 'Audemars Piguet 26240CE.OO.1225CE.01', '499.99', '5000', '4.5', "This 41 mm Royal Oak Selfwinding Chronograph fully crafted in black ceramic and contrasted with subtle pink gold accents is endowed with the collection’s latest design evolution and \“50-years\” anniversary oscillating weight.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
 'AUDEMARS_PIGUET', 'images/AP4.jpg', 'Audemars Piguet 15510OR.OO.D002CR.01', '549.99', '5000', '4', "This 18-carat pink gold Royal Oak Selfwinding in 41 mm is endowed with the new design evolution and sports a black dial with “Grande Tapisserie” pattern, pink gold applied hour-markers and a matching alligator strap..");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
 'AUDEMARS_PIGUET', 'images/AP5.jpg', 'Audemars Piguet 26227BC.SS.D326CR.01', '520.00', '5000', '5', "While the Royal Oak Concept Flying Tourbillon's 18-carat white gold case sparks with brilliant-cut graded blue sapphires, the gold dial and movement components are set with brilliant-cut diamonds.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
 'AUDEMARS_PIGUET', 'images/AP6.jpg', 'Audemars Piguet 26227BC.SS.D326CR.01', '600.00', '5000', '4.5', "While the Royal Oak Concept Flying Tourbillon's 18-carat white gold case sparks with brilliant-cut graded blue sapphires, the gold dial and movement components are set with brilliant-cut diamonds.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
 'AUDEMARS_PIGUET', 'images/AP7.jpg', 'Audemars Piguet 26425BC.ZZ.D002CA.02', '575.00', '5000', '5', "This 18-carat white gold 43 mm Royal Oak Offshore encompasses a case, a bezel and a dial entirely paved with baguette-cut diamonds. The black rubber strap adds a sporty touch.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
 'AUDEMARS_PIGUET', 'images/AP8.jpg', 'Audemars Piguet 26589IO.OO.D056CA.01', '650.00', '5000', '5', "The titanium case 44mm Royal Oak Concept Flying Tourbillon GMT iteration is topped off with a green ceramic bezel. The black architectural movement features green CVD-coloured inserts matching with the bezel’s hue.");
 
-INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
+INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL,
 'AUDEMARS_PIGUET', 'images/AP9.jpg', 'Audemars Piguet 26283ST.OO.D002CA.01', '520.00', '5000', '5', "Selfwinding chronograph with date display and small seconds at 6 o'clock. Stainless steel case, Black dial with “Méga Tapisserie” pattern, Arabic numerals and white gold Royal Oak hands with luminescent coating, black strap.");
 
-// CARTIER //
+# CARTIER
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier1.jpg', 'Cartier WGSA0032 Santos-Dumont', '300.00', '5000', '5', "18K rose gold (750/1000) case, beaded crown set with a cabochon sapphire, silver satin-finish dial with sunray-effect, Roman numerals, blued-steel sword-shaped hands, sapphire crystal.");
+'CARTIER', 'images/cartier1.jpg', 'Cartier WGSA0032 Santos-Dumont', '300.00', '5000', '5', "18K rose gold (750/1000) case, beaded crown set with a cabochon sapphire, silver satin-finish dial with sunray-effect, Roman numerals, blued-steel sword-shaped hands, sapphire crystal.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier2.jpg', 'Cartier WSSA0032 Santos-Dumont', '329.99', '5000', '5', "Beaded steel crown set with a blue synthetic spinel cabochon, silvered satin-finish sunray-effect dial, Roman numerals, blued-steel sword-shaped hands, sapphire crystal. Navy blue alligator-skin strap, steel ardillon buckle.");
+'CARTIER', 'images/cartier2.jpg', 'Cartier WSSA0032 Santos-Dumont', '329.99', '5000', '5', "Beaded steel crown set with a blue synthetic spinel cabochon, silvered satin-finish sunray-effect dial, Roman numerals, blued-steel sword-shaped hands, sapphire crystal. Navy blue alligator-skin strap, steel ardillon buckle.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier3.jpg', 'Cartier W2SA0017 Santos-Dumont', '309.99', '5000', '4.5', "Steel case, rose gold 750/1000 bezel, beaded steel crown set with a blue synthetic spinel cabochon, silvered satin-finish sunray-effect dial, Roman numerals, blued-steel sword-shaped hands, sapphire crystal.");
+'CARTIER', 'images/cartier3.jpg', 'Cartier W2SA0017 Santos-Dumont', '309.99', '5000', '4.5', "Steel case, rose gold 750/1000 bezel, beaded steel crown set with a blue synthetic spinel cabochon, silvered satin-finish sunray-effect dial, Roman numerals, blued-steel sword-shaped hands, sapphire crystal.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier4.jpg', 'Cartier W2SA0015 Santos-Dumont', '349.99', '5000', '4', "Steel case, yellow gold 750/1000 bezel, beaded steel crown set with a synthetic blue cabochon spinel, anthracite dial, Roman numerals, gold-tone steel sword-shaped hands, sapphire crystal. Case back engraved with 14 bis design.");
+'CARTIER', 'images/cartier4.jpg', 'Cartier W2SA0015 Santos-Dumont', '349.99', '5000', '4', "Steel case, yellow gold 750/1000 bezel, beaded steel crown set with a synthetic blue cabochon spinel, anthracite dial, Roman numerals, gold-tone steel sword-shaped hands, sapphire crystal. Case back engraved with 14 bis design.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier5.jpg', 'Santos De Cartier W2SA0016', '375.00', '5000', '5', "Steel case and yellow gold 750/1000 bezel, 7-sided crown set with a faceted synthetic spinel, silvered opaline dial, blued-steel sword-shaped hands, sapphire crystal. Steel bracelet with “SmartLink” adjustment system.");
+'CARTIER', 'images/cartier5.jpg', 'Santos De Cartier W2SA0016', '375.00', '5000', '5', "Steel case and yellow gold 750/1000 bezel, 7-sided crown set with a faceted synthetic spinel, silvered opaline dial, blued-steel sword-shaped hands, sapphire crystal. Steel bracelet with “SmartLink” adjustment system.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier6.jpg', 'Santos De Cartier WGSA0030', '400.00', '5000', '4.5', "Yellow gold 750/1000 case, yellow gold 750/1000 7-sided crown set with a faceted sapphire, silvered opaline dial, blued-steel sword-shaped hands, sapphire crystal. Yellow gold 750/1000 bracelet with “SmartLink” adjustment system.");
+'CARTIER', 'images/cartier6.jpg', 'Santos De Cartier WGSA0030', '400.00', '5000', '4.5', "Yellow gold 750/1000 case, yellow gold 750/1000 7-sided crown set with a faceted sapphire, silvered opaline dial, blued-steel sword-shaped hands, sapphire crystal. Yellow gold 750/1000 bracelet with “SmartLink” adjustment system.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier7.jpg', 'Santos De Cartier WGSA0031', '375.00', '5000', '5', "Rose gold 750/1000 case, rose gold 750/1000 7-sided crown set with a faceted sapphire, silvered opaline dial, blued-steel sword-shaped hands, sapphire crystal. Rose gold 750/1000 bracelet with “SmartLink” adjustment system.");
+'CARTIER', 'images/cartier7.jpg', 'Santos De Cartier WGSA0031', '375.00', '5000', '5', "Rose gold 750/1000 case, rose gold 750/1000 7-sided crown set with a faceted sapphire, silvered opaline dial, blued-steel sword-shaped hands, sapphire crystal. Rose gold 750/1000 bracelet with “SmartLink” adjustment system.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier8.jpg', 'Santos De Cartier WSSA0030', '355.00', '5000', '5', "Santos watch, calibre 1847 MC. Steel case, 7-sided crown set with a faceted synthetic spinel, graduated blue dial, steel sword-shaped hands, sapphire crystal. Steel bracelet with SmartLink adjustment system.");
+'CARTIER', 'images/cartier8.jpg', 'Santos De Cartier WSSA0030', '355.00', '5000', '5', "Santos watch, calibre 1847 MC. Steel case, 7-sided crown set with a faceted synthetic spinel, graduated blue dial, steel sword-shaped hands, sapphire crystal. Steel bracelet with SmartLink adjustment system.");
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
-'CARTIER', 'cartier9.jpg', 'Santos De Cartier WHSA0015', '410.00', '5000', '5', "Steel case, 7-sided crown set with a faceted sapphire, blued-steel sword-shaped hands, sapphire crystal and case back. Steel bracelet with SmartLink adjustment system. Second strap in alligator skin.");
+'CARTIER', 'images/cartier9.jpg', 'Santos De Cartier WHSA0015', '410.00', '5000', '5', "Steel case, 7-sided crown set with a faceted sapphire, blued-steel sword-shaped hands, sapphire crystal and case back. Steel bracelet with SmartLink adjustment system. Second strap in alligator skin.");
 
-// PATEK_PHILIPPE //
+# PATEK_PHILIPPE
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
 'PATEK_PHILIPPE', 'images/patek1.jpg', 'Patek Philippe 5990-1A-011 Nautilus', '405.00', '5000', '5', "The Ref. 5990/1A-011 Nautilus Travel Time chronograph is one of Patek Philippe’s rare steel watches. It features a new blue dial with a ray sunburst dial and a delicate black gradation to the periphery.");
@@ -118,7 +115,7 @@ INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `
 'PATEK_PHILIPPE', 'images/patek9.jpg', 'Patek Philippe 5164R-001 Aquanaut', '500.00', '5000', '5', "The Aquanaut Travel Time is now coming back onstage with the gentle warmth of rose gold and a brown dial. This exceptionally convenient traveler’s companion is endowed with a self-winding movement.");
 
 
-// ROLEX //
+# ROLEX
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
 'ROLEX', 'images/rolex.jpg', 'Rolex GMT Master II 126711chnr Root Beer', '375.00', '5000', '5', "THE OYSTER PERPETUAL GMT-MASTER II IN OYSTERSTEEL AND EVEROSE GOLD WITH AN OYSTER BRACELET. This model features a black dial and a two-colour Cerachrom bezel insert in brown and black ceramic.");
@@ -146,29 +143,4 @@ INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `
 
 INSERT INTO `products` (`id`, `category`, `imgpath`, `name`, `price`, `stock`, `rating`, `description`) VALUES (NULL, 
 'ROLEX', 'images/rolex9.jpg', 'Rolex Submariner 116610LV (Hulk)', '499.99', '5000', '5', "THE OYSTER PERPETUAL SUBMARINER DATE IN OYSTERSTEEL WITH A CERACHROM BEZEL INSERT IN GREEN CERAMIC AND A GREEN DIAL WITH LARGE LUMINESCENT HOUR MARKERS. It features a unidirectional rotatable bezel.");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

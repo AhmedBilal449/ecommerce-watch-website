@@ -107,18 +107,18 @@ public class ViewController
         return mav;
     }
 
-//    @GetMapping("/about")
-//    public ModelAndView viewAbout()
-//    {
-//        ModelAndView mav = new ModelAndView("about");
-//        return mav;
-//    }
-//
-//    @GetMapping("/contact")
-//    public ModelAndView viewContact()
-//    {
-//        ModelAndView mav = new ModelAndView("contact");
-//        return mav;
-//    }
+    @GetMapping("/about")
+    public ModelAndView viewAbout()
+    {
+        ModelAndView mav = new ModelAndView("about");
+        return mav;
+    }
+
+    @GetMapping("/contact")
+    public ModelAndView viewContact()
+    {
+        ModelAndView mav = new ModelAndView("contact");
+        return mav;
+    }
 
 }
