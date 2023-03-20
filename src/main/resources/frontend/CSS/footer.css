@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+body{
+  line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer {
+   background-color: #24262b;
+   padding: 70px;
+ }
+ 
+.footer-col {
+   width: 33%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+   margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color: #fff;
+  padding-left: 8px;
+
+}
+
+.footer-col .socials a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .socials a:hover{
+  color: #24262b;
+  background-color: #fff;
+}
+
+ 
+ .footer-bottom {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+ }
+ 
+ .footer-bottom p {
+   font-size: 12px;
+   color: #fff;
+   opacity: 0.8;
+   margin: 0;
+ }
+ /* for animation  */
+ .footer-container {
+   animation-name: fade-in;
+   animation-duration: 1s;
+   animation-delay: 0.5s;
+   animation-fill-mode: both;
+ }
+ 
+ /* responsive */
+@media only screen and (max-width: 768px) {
+   .header .flex {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+   .header .flex .logo {
+     margin-bottom: 1rem;
+   }
+   .header .flex .navbar {
+     margin-top: 1rem;
+   }
+ }
+ 
+ /* Footer styles for small screens */
+ @media only screen and (max-width: 768px) {
+   .footer .flex {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+   .footer .flex .social-icons {
+     margin-top: 1rem;
+   }
+   .footer .flex .copyright {
+     margin-top: 1rem;
+   }
+ }
+ 
