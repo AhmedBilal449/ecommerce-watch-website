@@ -1,7 +1,9 @@
 
 # CS2TP Group7 
 
-E-Commerce site using Springboot
+Our E-commerce site front end uses HTML, CSS and JS, while our backend is based on 
+Sprintboot(Java). The site also comes with a web-based admin panel, that can be used to alter stock, 
+give permission to employees and other functions required by the administrator.
 
 # Setting up
 Ensure **JDK Version is 17.x**
