@@ -14,6 +14,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -52,10 +54,16 @@ public class ViewController
     }
 
     @GetMapping("/products")
-    public ModelAndView viewProducts()
+    @ResponseBody
+    public ModelAndView viewProducts(@RequestParam(defaultValue = "all") String category)
     {
         ModelAndView mav = new ModelAndView("product");
-        mav.addObject( "products", productRepository.findAll() );
+        if (category.equals("all"))
+            mav.addObject( "products", productRepository.findAll() );
+        else
+            mav.addObject( "products", productRepository.findAllByCategory(category) );
+
+
         mav.addObject( "cartDto", new CartDto() );
         return mav;
     }
@@ -75,36 +83,6 @@ public class ViewController
     {
         cartService.checkout();
         return viewBasket();
-    }
-
-    @GetMapping("/audemarspiguet")
-    public ModelAndView viewAudemarspiguet() {
-        ModelAndView mav = new ModelAndView("audemarspiguet");
-        return mav;
-    }
-
-    @GetMapping("/rolex")
-    public ModelAndView viewRolex() {
-        ModelAndView mav = new ModelAndView("rolex");
-        return mav;
-    }
-
-    @GetMapping("/cartier")
-    public ModelAndView viewCartier() {
-        ModelAndView mav = new ModelAndView("cartier");
-        return mav;
-    }
-
-    @GetMapping("/armani")
-    public ModelAndView viewArmani() {
-        ModelAndView mav = new ModelAndView("armani");
-        return mav;
-    }
-
-    @GetMapping("/patekphilippe")
-    public ModelAndView viewPatekPhilippe() {
-        ModelAndView mav = new ModelAndView("patekphilippe");
-        return mav;
     }
 
     @GetMapping("/about")
