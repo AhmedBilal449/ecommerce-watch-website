@@ -1,8 +1,13 @@
 package com.cstp.shop.service.impl;
 
 
+import com.cstp.shop.model.Order;
 import com.cstp.shop.model.Product;
+import com.cstp.shop.model.User;
+import com.cstp.shop.repository.OrderRepository;
 import com.cstp.shop.repository.ProductRepository;
+import com.cstp.shop.repository.UserRepository;
+import com.cstp.shop.security.jwt.JwtUtils;
 import com.cstp.shop.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -10,12 +15,10 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.util.WebUtils;
 
-import javax.persistence.EntityNotFoundException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import javax.servlet.http.HttpServletRequest;
+import java.util.*;
 
 
 @Service
@@ -31,6 +34,12 @@ public class CartServiceImpl implements CartService {
     public CartServiceImpl(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
+
+    @Autowired
+    JwtUtils jwtUtils;
+
+    @Autowired
+    OrderRepository orderRepository;
 
     @Override
     public void addProduct(Product product) {
@@ -58,12 +67,16 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public void checkout() {
+    public void checkout(HttpServletRequest request) {
         Product product;
+
+        List<Product> productList = new ArrayList<>();
+
         for (Map.Entry<Product, Integer> entry : products.entrySet())
         {
             product = productRepository.findById(entry.getKey().getId())
                     .orElse(null);
+            productList.add(product);
 
             System.out.println(product);
 
@@ -72,6 +85,14 @@ public class CartServiceImpl implements CartService {
                 entry.getKey().setStock(product.getStock() - entry.getValue());
             }
         }
+
+//        List<Product> keys = new ArrayList<>(products.keySet());
+
+        User user = jwtUtils.getUserFromRequest(request);
+        Order order = new Order(user, productList);
+        System.out.println(user.getUsername()+" placed an order!");
+        orderRepository.save(order);
+
         productRepository.saveAllAndFlush(products.keySet());
         products.clear();
     }

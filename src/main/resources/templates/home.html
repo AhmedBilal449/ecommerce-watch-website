@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/styles.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
     <title>Home</title>
 </head>
 <body>
+    <nav th:replace="fragments/navbar :: navbar" />
+
     <div class="video-container">
         <video autoplay muted loop>
             <source src="../Videos/homepageVidEdit.mp4" type="video/mp4" />
         </video>
         <div class="caption">
           <h2>Welcome</h2>
-          <a href="products"><button>shop now</button></a>
+          <a href="/products"><button>shop now</button></a>
         </div>
     </div>
     
@@ -25,23 +29,23 @@
 
     <div class="ourProductsHome">
        
-        <a href="armani"><div class="card card2">
+        <a href="./products?category=armani"><div class="card card2">
             <h3>Armani</h3>
         </div></a>
 
-        <a href="audemarspiguet"><div class="card card4">
+        <a href="./products?category=audemars_piguet"><div class="card card4">
             <h3>Audemars Piguet</h3>
         </div></a>
 
-        <a href="cartier"><div class="card card3">
+        <a href="./products?category=cartier"><div class="card card3">
             <h3>Cartier</h3>
         </div></a>
 
-        <a href="patekphilippe"><div class="card card5">
+        <a href="./products?category=patek_philippe"><div class="card card5">
             <h3>Patek Philippe</h3>
         </div></a>
 
-        <a href="rolex"><div class="card card1">
+        <a href="./products?category=rolex"><div class="card card1">
             <h3>Rolex</h3>
         </div></a>
 
@@ -61,7 +65,7 @@
         </div>
     </div>
 
-    <div class="bottom-space"><br></div>
-
+    <footer th:replace="fragments/footer :: footer" />
 </body>
+
 </html>

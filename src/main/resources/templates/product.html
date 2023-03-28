@@ -7,11 +7,14 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="Stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <script src="../Javascript/node.js"></script>
 </head>
 
 <body>
+    <nav th:replace="fragments/navbar :: navbar" />
 
     <div class="body-container-product">
         <div class="product-container">
@@ -82,6 +85,7 @@
             <div class="products">
 
                 <div class="product-name" th:each="product : ${products}">
+
                     <div class="product-image">
                         <img th:src="${product.imgpath}" alt="">
                     </div>
@@ -98,15 +102,18 @@
                     <div class="buy">
                         <form th:action="@{/api/cart/add}" th:object="${cartDto}" method="POST">
                             <input type="text" th:value="${product.id}" id="id" name="id" hidden/>
-                            <i class="fas fa-network-wired"></i>
+                            <i class="fas"></i>
                             <button type="submit">Add to basket</button>
                         </form>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
+
+    <footer th:replace="fragments/footer :: footer" />
+
 </body>
 
 </html>

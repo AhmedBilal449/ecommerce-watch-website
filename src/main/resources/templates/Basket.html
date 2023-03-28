@@ -8,6 +8,10 @@
         <title>Cart Page</title>
         <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="Stylesheet" href="../CSS/styles_ali_temp.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="../CSS/styles.css">
+
         <style>
             td img {
               max-width: 50px;
@@ -20,6 +24,7 @@
     </head>
 
 <body>
+    <nav th:replace="fragments/navbar :: navbar" />
     <div class="body-container-product">
         <div class="bucket-container">
             <div class="header">
@@ -65,6 +70,7 @@
             </div>
           </div>
     </div>
+    <footer th:replace="fragments/footer :: footer" />
 </body>
 
 </html>

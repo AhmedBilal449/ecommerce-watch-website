@@ -19,10 +19,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
 
-@RestController
+@Controller
 public class ViewController
 {
     private final CartService cartService;
@@ -79,9 +80,9 @@ public class ViewController
     }
 
     @GetMapping({"/checkout"})
-    public ModelAndView checkout()
+    public ModelAndView checkout(HttpServletRequest request)
     {
-        cartService.checkout();
+        cartService.checkout(request);
         return viewBasket();
     }
 

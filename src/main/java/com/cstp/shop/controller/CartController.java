@@ -1,8 +1,6 @@
 package com.cstp.shop.controller;
 
 import com.cstp.shop.model.dto.CartDto;
-import com.cstp.shop.model.dto.SignupDto;
-import com.cstp.shop.controller.ViewController;
 import com.cstp.shop.service.CartService;
 import com.cstp.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 
@@ -52,8 +50,8 @@ public class CartController {
     }
 
     @GetMapping("/checkout")
-    public String checkout() {
-            cartService.checkout();
+    public String checkout(HttpServletRequest request) {
+            cartService.checkout(request);
         return "checkout()";
     }
 

@@ -5,11 +5,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import com.cstp.shop.model.dto.LoginDto;
 import com.cstp.shop.model.dto.SignupDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
@@ -35,6 +38,7 @@ import com.cstp.shop.repository.UserRepository;
 import com.cstp.shop.security.jwt.JwtUtils;
 import com.cstp.shop.security.services.UserDetailsImpl;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.util.WebUtils;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -56,7 +60,7 @@ public class AuthController {
   JwtUtils jwtUtils;
 
   @PostMapping("/form/login")
-  public ModelAndView formLogin(@Valid @ModelAttribute LoginDto loginDto, BindingResult result, Model model)
+  public ModelAndView formLogin(@Valid @ModelAttribute LoginDto loginDto, HttpServletRequest request, HttpServletResponse response)
   {
     Authentication authentication = authenticationManager
             .authenticate(new UsernamePasswordAuthenticationToken(loginDto.getEmail(), loginDto.getPassword()));
@@ -71,6 +75,10 @@ public class AuthController {
             .map(item -> item.getAuthority())
             .collect(Collectors.toList());
 
+    System.out.println(String.valueOf(jwtCookie));
+//    response.setHeader(HttpHeaders.SET_COOKIE, String.valueOf(jwtCookie));
+
+    WebUtils.setSessionAttribute(request, jwtUtils.getCookieName(), jwtCookie.getValue());
 
     return new ModelAndView("redirect:/products");
   }
@@ -98,6 +106,7 @@ public class AuthController {
             .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
     roles.add(userRole);
     user.setRoles(roles);
+
 
     userRepository.save(user);
 
