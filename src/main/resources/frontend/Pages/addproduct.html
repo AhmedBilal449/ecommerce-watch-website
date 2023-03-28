@@ -11,6 +11,49 @@
     <script src="../Javascript/node.js"></script>
 </head>
 
+<!--Navbar-->
+<nav>
+    <div class="logos"><img src="../Images/Logo.png" style="padding-right: 15px;"></div>
+    <div class="logo">TimeFlies</div>  
+    <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+    </label>  
+    <input type="checkbox" id="btn">     
+    <ul>
+        <li><a href='Home.html'>Home</a></li>
+        
+        <li>
+            <label for="btn-1" class="show">Watches +</label>
+            <a href='Product.html'>Watches</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+                <li><a href='Product.html'>All Watches</a></li>
+                <li><a href='Armani.html'>Armani</a></li>
+                <li><a href='Audemars Piguet.html'>Audemars </a></li>
+                <li><a href='Cartier.html'>Cartier</a></li>
+                <li><a href='Patek Philippe.html'>Patek </a></li>
+                <li><a href='Rolex.html'>Rolex</a></li>
+            </ul>
+        </li>
+      
+        <li><a href='Contact Us.html'>Contact Us</a></li>
+        <li><a href='About Us.html'>About Us</a></li>
+
+        <li>
+            <label for="btn-2" class="show">User +</label>
+            <a href=" " class="navbar-user"><img class="" src="../Images/user.png" alt="user" width="35" height="35" style="margin-top:18px" /></a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+                <li><a href='Product.html'>Name</a></li>
+                <li><a href='Product.html'>Logout</a></li>
+            </li>
+            </ul>
+
+        <li><a href="" class="navbar-basket"><img class="" src="../Images/cart.png" alt="Cart" width="35" height="35" style="margin-top:18px" /></a></li>
+            
+        </ul>
+    </nav>
+
 <body>
     <div class="body-container-product">
         <div class="product-container">
@@ -19,6 +62,8 @@
                 <h1>Men's Watches</h1>
                 <p> All Watches</p>
             </div>
+
+            <!--Fitler-->
             <div class="filter-section">
                 <h2>Filter Products</h2>
             
@@ -78,6 +123,8 @@
                     </a>
                 </div>
             </div>
+            
+            <!--product cards-->
             <div class="products">
                  <div class="product-name">
                     <div class="product-image">
