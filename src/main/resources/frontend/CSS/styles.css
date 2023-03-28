@@ -109,7 +109,7 @@ nav ul ul ul li{
   left: 150px;
 }
 
-.show, .icon, input{
+.show, .icon{
   display: none;
 }
 @media all and (max-width:970px){
