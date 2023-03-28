@@ -466,17 +466,17 @@ margin:auto;
   transition-property: color;
 }
 
-.video-container button:focus, .video-container button:hover {
+.video-container button:focus, .video-container button:hover, .video-container2 button:focus, .video-container2 button:hover {
  color: #fff;
 }
 
 
-.video-container button:focus:after, .video-container button:hover:after {
+.video-container button:focus:after, .video-container button:hover:after, .video-container2 button:focus:after, .video-container2 button:hover:after{
   width: 100%;
   left: 0%;
 }
 
-.video-container button:after {
+.video-container button:after, .video-container2 button:after{
   content: "";
   pointer-events: none;
   bottom: -2px;
