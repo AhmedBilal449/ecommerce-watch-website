@@ -58,7 +58,7 @@ nav ul li a{
 
 nav ul li a:hover{
   color: rgb(180, 180, 180);
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 5px white;
 }
 
@@ -70,7 +70,6 @@ nav ul ul li a:hover{
   padding-right: 15px;
   padding-left: 10px;
   margin-top: 15px;
- 
 }
 nav ul ul{
   position: absolute;
@@ -108,6 +107,87 @@ nav ul ul ul li{
   position: relative;
   top: -70px;
   left: 150px;
+}
+
+.show, .icon, input{
+  display: none;
+}
+@media all and (max-width:970px){
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+
+  nav .logo{
+    padding-left: 30px;
+    width: 100px;
+  }
+
+  nav ul li, nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul{
+    top: 70px;
+    position: static;
+    border-top: none;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav ul ul ul li{
+    position: static;
+  }
+
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+
+  nav ul ul a{
+    padding-left: 40px;
+
+  }
+
+  nav ul ul ul a{
+    padding-left: 80px;
+
+  }
+
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+
+  .show:hover{
+    color: rgb(180, 180, 180);
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+
+  }
+  .show + a, ul{
+    display: none;
+  }
+
+  [id^=btn]:checked +ul{
+    display: block;
+  }
 }
 /*Login and Sign Up Page*/
 .body-container{
