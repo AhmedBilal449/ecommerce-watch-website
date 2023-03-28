@@ -15,11 +15,18 @@
     <!--Navbar-->
     <nav>
         <div class="logos"><img src="../Images/Logo.png" style="padding-right: 15px;"></div>
-        <div class="logo">TimeFlies</div>          
+        <div class="logo">TimeFlies</div>  
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>  
+        <input type="checkbox" id="btn">     
         <ul>
             <li><a href='Home.html'>Home</a></li>
-
-            <li><a href='Product.html'>Watches</a>
+            
+            <li>
+                <label for="btn-1" class="show">Watches +</label>
+                <a href='Product.html'>Watches</a>
+                <input type="checkbox" id="btn-1">
                 <ul>
                     <li><a href='Product.html'>All Watches</a></li>
                     <li><a href='Armani.html'>Armani</a></li>
@@ -32,11 +39,22 @@
           
             <li><a href='Contact Us.html'>Contact Us</a></li>
             <li><a href='About Us.html'>About Us</a></li>
-            <a href=" " class="navbar-user"><img class="" src="../Images/user.png" alt="user" width="35" height="35" style="margin-top:15px" /></a>
-            <a href="" class="navbar-basket"><img class="" src="../Images/cart.png" alt="Cart" width="35" height="35" style="margin-top:15px" /></a>
+
+            <li>
+                <label for="btn-2" class="show">User +</label>
+                <a href=" " class="navbar-user"><img class="" src="../Images/user.png" alt="user" width="35" height="35" style="margin-top:18px" /></a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href='Product.html'>Name</a></li>
+                    <li><a href='Product.html'>Logout</a></li>
+                </li>
+                </ul>
+
+            <li><a href="" class="navbar-basket"><img class="" src="../Images/cart.png" alt="Cart" width="35" height="35" style="margin-top:18px" /></a></li>
                 
             </ul>
         </nav>
+
 
     <div class="body-container-product">
         <div class="product-container">
