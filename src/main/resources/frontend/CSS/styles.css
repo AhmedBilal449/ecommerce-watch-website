@@ -1385,7 +1385,7 @@ hr{
 .contactFormCS .inputBoxCS textarea:focus ~ span,
 .contactFormCS .inputBoxCS textarea:valid ~ span
 {
-  color: #e91e63;
+  color: #8097B3;
   font-size: 12px;
   transform: translateY(-20px);
 
