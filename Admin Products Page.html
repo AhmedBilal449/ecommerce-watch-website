@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products Page</title>
+<head>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+		.form-input {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		.form-input input[type="text"] {
+			width: 200px;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+		.form-input input[type="number"] {
+			width: 100px;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+		.form-input button {
+			padding: 8px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		.remove-product {
+			color: red;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<script src="scipt.js"></script>
+	<h1>Product List</h1>
+	<div>
+		<div class="form-input">
+			<label for="product-image">Image:</label>
+			<input type="text" id="product-image">
+		</div>
+		<div class="form-input">
+			<label for="product-category">Category:</label>
+			<input type="text" id="product-category">
+		</div>
+		<div class="form-input">
+			<label for="product-name">Name:</label>
+			<input type="text" id="product-name">
+		</div>
+		<div class="form-input">
+			<label for="product-description">Description:</label>
+			<input type="text" id="product-description">
+		</div>
+		<div class="form-input">
+			<label for="product-stock">Stock:</label>
+			<input type="number" id="product-stock">
+		</div>
+		<div class="form-input">
+			<label for="product-price">Price:</label>
+			<input type="number" id="product-price">
+		</div>
+		<div class="form-input">
+			<label for="product-rating">Rating:</label>
+			<input type="number" id="product-rating" step="0.1">
+		</div>
+		<button id="add-product">Add Product</button>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Image</th>
+				<th>Category</th>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Stock</th>
+				<th>Price</th>
+				<th>Rating</th>
+				<th>Remove</th>
+			</tr>
+		</thead>
+		
+
+</body>
+</html>                
