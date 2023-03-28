@@ -25,7 +25,6 @@ nav .logo{
   font-weight: 600;
   line-height: 70px;
   padding-left: 10px;
-  text-align: center;
 }
 
 nav .logos{
@@ -64,7 +63,7 @@ nav ul li a:hover{
 }
 
 nav ul ul li a:hover{
-  color: rgb(180, 180, 180)grey;
+  color: rgb(180, 180, 180);
   box-shadow: none;
 }
 .navbar-user{
@@ -89,6 +88,7 @@ nav ul li:hover > ul{
   top: 70px;
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 nav ul ul li{
