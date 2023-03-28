@@ -9,7 +9,7 @@
 /*navbar*/
 
 nav{
-  background:#24262b ;
+  background:#171E26 ;
   color: white;
 }
 
@@ -44,7 +44,7 @@ nav ul{
 nav ul li{
   float: left;
   display: inline-block;
-  background: #24262b;
+  background: #171E26;
   margin: 0 5px;
 }
 
@@ -57,13 +57,13 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  color: rgb(180, 180, 180);
+  color: #8097B3;
   border-radius: 20px;
   box-shadow: 0 0 5px white;
 }
 
 nav ul ul li a:hover{
-  color: rgb(180, 180, 180);
+  color: #8097B3;
   box-shadow: none;
 }
 .navbar-user{
@@ -166,7 +166,7 @@ nav ul ul ul li{
   }
 
   .show:hover{
-    color: rgb(180, 180, 180);
+    color: #8097B3;
   }
   .icon{
     display: block;
@@ -202,7 +202,7 @@ nav ul ul ul li{
   position: relative;
   max-width: 850px;
   width: 100%;
-  background: #fff;
+  background: #f6f6f6;
   padding: 40px 30px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   perspective: 2700px;
@@ -280,7 +280,6 @@ nav ul ul ul li{
 .container .forms{
   height: 100%;
   width: 100%;
-  background: #fff;
 }
 .cover .text .text-2{
   font-size: 15px;
@@ -350,6 +349,7 @@ nav ul ul ul li{
   font-weight: 500;
   border-bottom: 2px solid rgba(0,0,0,0.2);
   transition: all 0.3s ease;
+  background: none;
 }
 .forms .form-content .text a{
   text-decoration: none;
@@ -359,7 +359,7 @@ nav ul ul ul li{
 }
 .forms .form-content .button input{
   color: #fff;
-  background: #000000;
+  background: #171E26;
   border-radius: 6px;
   padding: 0;
   cursor: pointer;
@@ -371,11 +371,12 @@ nav ul ul ul li{
 }
 
 .forms .form-content label{
-  color: #000000;
   cursor: pointer;
 }
 .forms .form-content label:hover{
   text-decoration: underline;
+  color: #8097B3;
+  transition: .5s;
 }
 .forms .form-content .login-text,
 .forms .form-content .sign-up-text{
@@ -383,7 +384,7 @@ nav ul ul ul li{
   margin-top: 25px;
 }
 .forms .form-content .button input:hover{
-  background: #7a7a7a;
+  background: #8097B3;
 }
 .container #flip{
   display: none;
@@ -446,6 +447,9 @@ margin:auto;
   text-transform: uppercase;
 }
 
+.caption h6{
+  font-size: 80px;
+}
 
 .video-container button, .video-container2 button {
   font-size: 18px;
@@ -462,16 +466,17 @@ margin:auto;
   transition-property: color;
 }
 
-button:focus,button:hover {
+.video-container button:focus, .video-container button:hover {
  color: #fff;
 }
 
-button:focus:after, button:hover:after {
+
+.video-container button:focus:after, .video-container button:hover:after {
   width: 100%;
   left: 0%;
 }
 
-button:after {
+.video-container button:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
@@ -479,7 +484,7 @@ button:after {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #fff;
+  background-color: #8097B3;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -809,7 +814,7 @@ width:50%;
   color: black;
 }
 
-p1{
+.p1{
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
@@ -899,7 +904,7 @@ p1{
     padding: 10px 20px;
     border-radius: 7px;
     border: none;
-    background-color: black;
+    background-color: #171E26;
     color: whitesmoke;
     font-size: 18px;
     text-transform: capitalize;
@@ -907,7 +912,7 @@ p1{
     transition: .5s;
 }
 .buy button:hover{
-    box-shadow: 0 0 20px 0px black ;
+    box-shadow: 0 0 20px 0px #6e6e6e ;
     transform: scale(1.1);
 }
 
@@ -968,14 +973,15 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
-  background-color: #000000;
+  background-color: #171E26;
   color: #fff;
   cursor: pointer;
   flex: 1;
 }
 
 button:hover {
-  background-color: #212121;
+  transition: .3s;
+  background-color: #8097B3;
 }
 
 .card-container {
@@ -1219,7 +1225,7 @@ hr{
 
 #cart-table tfoot {
   border-top: 2px solid #dddddd;
-  background-color: #000000;
+  background-color: #171E26;
   color: #ffffff;
 }
 
@@ -1388,7 +1394,7 @@ hr{
 .contactFormCS .inputBoxCS input[type="submit"]
 {
   width: 100px;
-  background: #333;
+  background: #171E26;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -1468,7 +1474,7 @@ hr{
   padding: 10px 20px;
   border-radius: 7px;
   border: none;
-  background-color: black;
+  background-color: #171E26;
   color: whitesmoke;
   font-size: 18px;
   text-transform: capitalize;
@@ -1646,7 +1652,7 @@ hr{
   text-decoration: none;
   width: 235px;
   height: 50px;
-  background: #000000;
+  background: #171E26;
   color: #fff;
   margin: 0 auto;
   margin-top: 25px;
