@@ -4,6 +4,7 @@ import com.cstp.shop.model.dto.CartDto;
 import com.cstp.shop.service.CartService;
 import com.cstp.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -32,14 +33,13 @@ public class CartController {
     @GetMapping("/add/{productId}")
     public String addProductToCart(@PathVariable("productId") Long productId) {
         productService.findById(productId).ifPresent(cartService::addProduct);
-        System.out.println(cartService.getProductsInCart()+" total: "+ cartService.getTotal());
         return "addProductToCart()";
     }
 
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     @PostMapping("/add")
     public String formAddProductToCart(@Valid @ModelAttribute CartDto cartDto, BindingResult result, Model model) {
         productService.findById(cartDto.getId()).ifPresent(cartService::addProduct);
-        System.out.println(cartService.getProductsInCart()+" total: "+ cartService.getTotal());
         return "redirect:/products";
     }
 

@@ -78,7 +78,6 @@ public class CartServiceImpl implements CartService {
                     .orElse(null);
             productList.add(product);
 
-            System.out.println(product);
 
             if (product == null) continue;
             if (entry.getValue() < product.getStock()) {
@@ -90,7 +89,6 @@ public class CartServiceImpl implements CartService {
 
         User user = jwtUtils.getUserFromRequest(request);
         Order order = new Order(user, productList);
-        System.out.println(user.getUsername()+" placed an order!");
         orderRepository.save(order);
 
         productRepository.saveAllAndFlush(products.keySet());

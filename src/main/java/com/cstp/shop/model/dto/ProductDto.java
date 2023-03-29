@@ -1,4 +1,4 @@
-package com.cstp.shop.payload.request;
+package com.cstp.shop.model.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,18 +9,21 @@ import javax.validation.constraints.Size;
 
 @Getter
 @Setter
-public class ProductRequest
-{
+public class ProductDto {
     @NotBlank
+    @Size(max = 64)
     private String name;
 
     @NotBlank
+    @Size(max = 255)
     private String description;
 
     @NotBlank
+    @Size(max = 120)
     private String category;
 
     @NotBlank
+    @Size(max = 255)
     private String imgpath;
 
     @NotNull
@@ -29,6 +32,5 @@ public class ProductRequest
     @NotNull
     private int stock;
 
-    @NotNull
     private int rating;
 }

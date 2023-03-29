@@ -4,6 +4,7 @@ import com.cstp.shop.model.Product;
 import com.cstp.shop.model.User;
 import com.cstp.shop.model.dto.CartDto;
 import com.cstp.shop.model.dto.LoginDto;
+import com.cstp.shop.model.dto.ProductDto;
 import com.cstp.shop.model.dto.SignupDto;
 import com.cstp.shop.repository.ProductRepository;
 import com.cstp.shop.repository.UserRepository;
@@ -30,11 +31,24 @@ public class AdminController
 
     @Autowired
     UserRepository userRepository;
+
+    @Autowired
+    ProductRepository productRepository;
+
     @GetMapping({"/users"})
-    public ModelAndView viewHome()
+    public ModelAndView viewUsers()
     {
         ModelAndView mav = new ModelAndView("manage_users");
         mav.addObject("users", userRepository.findAll());
+        return mav;
+    }
+
+    @GetMapping({"/products"})
+    public ModelAndView viewProducts()
+    {
+        ModelAndView mav = new ModelAndView("manage_products");
+        mav.addObject("products", productRepository.findAll());
+        mav.addObject("productDto", new ProductDto());
         return mav;
     }
 

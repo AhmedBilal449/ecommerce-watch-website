@@ -75,7 +75,6 @@ public class AuthController {
             .map(item -> item.getAuthority())
             .collect(Collectors.toList());
 
-    System.out.println(String.valueOf(jwtCookie));
 //    response.setHeader(HttpHeaders.SET_COOKIE, String.valueOf(jwtCookie));
 
     WebUtils.setSessionAttribute(request, jwtUtils.getCookieName(), jwtCookie.getValue());
@@ -84,19 +83,19 @@ public class AuthController {
   }
 
   @PostMapping("/form/signup")
-  public String formSignup(@Valid @ModelAttribute SignupDto signupForm, BindingResult result, Model model)
+  public ModelAndView formSignup(@Valid @ModelAttribute SignupDto signupForm, BindingResult result, Model model)
   {
-    if (userRepository.existsByUsername(signupForm.getUsername())) {
-      return "Error: Username is already taken!";
-    }
-
-    if (userRepository.existsByEmail(signupForm.getEmail())) {
-      return "Error: Email is already in use!";
-    }
-
-    if (!signupForm.passwordsMatch()) {
-      return "Error: Passwords do not match!";
-    }
+//    if (userRepository.existsByUsername(signupForm.getUsername())) {
+//      return "Error: Username is already taken!";
+//    }
+//
+//    if (userRepository.existsByEmail(signupForm.getEmail())) {
+//      return "Error: Email is already in use!";
+//    }
+//
+//    if (!signupForm.passwordsMatch()) {
+//      return "Error: Passwords do not match!";
+//    }
     Set<Role> roles = new HashSet<>();
     User user = new User( signupForm.getUsername(),
                           signupForm.getEmail(),
@@ -110,14 +109,13 @@ public class AuthController {
 
     userRepository.save(user);
 
-    return "User registered successfully!";
+    return new ModelAndView("redirect:/login");
   }
 
 
   @PostMapping("/signin")
   public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
-    System.out.println(loginRequest.getEmail());
 
     Authentication authentication = authenticationManager
         .authenticate(new UsernamePasswordAuthenticationToken(loginRequest.getEmail(), loginRequest.getPassword()));

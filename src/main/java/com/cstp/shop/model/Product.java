@@ -48,13 +48,14 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name, String description, String category, String imgpath, float price, int stock) {
+    public Product(String name, String description, String category, String imgpath, float price, int stock, int rating) {
         this.name = name;
         this.description = description;
         this.category = category;
         this.imgpath = imgpath;
         this.price = price;
         this.stock = stock;
+        this.rating = rating;
     }
 
     @Override

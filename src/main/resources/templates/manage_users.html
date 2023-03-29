@@ -12,9 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="Stylesheet" href="../CSS/styles2.css">
   </head>
   <body id="User_Manage">
+    <nav th:replace="fragments/navbar :: navbar" />
     <!-- heading -->
     <div>
       <h1>User Management</h1>
@@ -27,7 +29,6 @@
             <th>#</th>
             <th>Username</th>
             <th colspan="2">Email</th>
-            <th colspan="2">Address</th>
             <th>Role</th>
             <th></th>
           </tr>
@@ -38,7 +39,6 @@
           <td th:text="${user.id}"></td>
           <td th:text="${user.username}"></td>
           <td colspan="2" th:text="${user.email}"></td>
-          <td colspan="2">88 Bedford Road, Hampstead GH6 6AA</td>
           <td>
             <select>
               <option value="user">User</option>
