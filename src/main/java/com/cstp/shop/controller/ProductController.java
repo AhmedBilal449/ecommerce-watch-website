@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 import com.cstp.shop.model.Product;
+import com.cstp.shop.model.dto.ProductDto;
+import com.cstp.shop.model.dto.SignupDto;
 import com.cstp.shop.payload.request.ProductRequest;
 import com.cstp.shop.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +22,9 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
 import com.cstp.shop.model.ERole;
 import com.cstp.shop.model.Role;
@@ -37,6 +37,7 @@ import com.cstp.shop.repository.RoleRepository;
 import com.cstp.shop.repository.UserRepository;
 import com.cstp.shop.security.jwt.JwtUtils;
 import com.cstp.shop.security.services.UserDetailsImpl;
+import org.springframework.web.servlet.ModelAndView;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -66,9 +67,33 @@ public class ProductController {
                                         productRequest.getCategory(),
                                         productRequest.getImgpath(),
                                         productRequest.getPrice(),
-                                        productRequest.getStock());
+                                        productRequest.getStock(),
+                                        productRequest.getRating());
         productRepository.save(product);
 
         return ResponseEntity.ok(new MessageResponse("Product added successfully!"));
     }
+
+    @PostMapping("/form/add")
+    public ModelAndView formAddProduct(@Valid @ModelAttribute ProductDto productDto)
+    {
+        Product product = new Product(  productDto.getName(),
+                                        productDto.getDescription(),
+                                        productDto.getCategory(),
+                                        productDto.getImgpath(),
+                                        productDto.getPrice(),
+                                        productDto.getStock(),
+                                        productDto.getRating());
+        productRepository.save(product);
+        return new ModelAndView("redirect:/admin/products");
+    }
+
+    @PostMapping("/form/remove")
+    public ModelAndView formRemoveroduct(@RequestParam Long id)
+    {
+        Product product = productRepository.findById(id).get();
+        if (product != null) productRepository.delete(product);
+        return new ModelAndView("redirect:/admin/products");
+    }
+
 }

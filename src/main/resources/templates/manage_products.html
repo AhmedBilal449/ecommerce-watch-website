@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products Page</title>
+	<link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="../CSS/styles.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
+<head>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+		.form-input {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		.form-input input[type="text"] {
+			width: 200px;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+		.form-input input[type="number"] {
+			width: 100px;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+		.form-input button {
+			padding: 8px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		.remove-product {
+			color: red;
+			cursor: pointer;
+		}
+		table img {
+                        width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<nav th:replace="fragments/navbar :: navbar" />
+
+	<script src="scipt.js"></script>
+	<h1>Product List</h1>
+
+	<div>
+		<form th:action="@{/api/product/form/add}" th:object="${productDto}" method="post" style="flex-wrap: nowrap;max-width: none;">
+		<div class="form-input">
+			<label for="product-image">Image:</label>
+			<input type="text" id="product-image" th:field="*{imgpath}">
+		</div>
+		<div class="form-input">
+			<label for="product-category">Category:</label>
+			<input type="text" id="product-category" th:field="*{category}">
+		</div>
+		<div class="form-input">
+			<label for="product-name">Name:</label>
+			<input type="text" id="product-name" th:field="*{name}">
+		</div>
+		<div class="form-input">
+			<label for="product-description">Description:</label>
+			<input type="text" id="product-description" th:field="*{description}">
+		</div>
+		<div class="form-input">
+			<label for="product-stock">Stock:</label>
+			<input type="number" id="product-stock" th:field="*{stock}">
+		</div>
+		<div class="form-input">
+			<label for="product-price">Price:</label>
+			<input type="number" id="product-price" th:field="*{price}">
+		</div>
+		<div class="form-input">
+			<label for="product-rating">Rating:</label>
+			<input type="number" id="product-rating" step="1.0" th:field="*{rating}">
+		</div>
+		<input  id="add-product" type="submit" value="Add Product">
+		</form>
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Image</th>
+				<th>Category</th>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Stock</th>
+				<th>Price</th>
+				<th>Rating</th>
+				<th>Remove</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr  th:each="product : ${products}">
+				<td><img th:src="|/${product.imgpath}" alt=""></td>
+				<td th:text="${product.category}"></td>
+				<td th:text="${product.name}">Example Product</td>
+				<td th:text="${product.description}">This is an example product description.</td>
+				<td th:text="${product.stock}">10</td>
+				<td th:text="${product.price}">$99.99</td>
+				<td th:text="${product.rating}">4.5</td>
+				<td>
+					<form th:action="@{/api/product/form/remove(id=${product.id})}" method="post">
+						<input  class="remove-product" type="submit" value="X">
+					</form>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+</body>
+</html>                

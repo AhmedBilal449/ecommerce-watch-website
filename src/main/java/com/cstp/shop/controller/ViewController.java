@@ -1,6 +1,7 @@
 package com.cstp.shop.controller;
 
 import com.cstp.shop.model.Product;
+import com.cstp.shop.model.User;
 import com.cstp.shop.model.dto.CartDto;
 import com.cstp.shop.model.dto.LoginDto;
 import com.cstp.shop.model.dto.SignupDto;
@@ -39,7 +40,7 @@ public class ViewController
     ProductRepository productRepository;
 
     @GetMapping({"/", "/home"})
-    public ModelAndView viewHome()
+    public ModelAndView viewHome(HttpServletRequest request)
     {
         ModelAndView mav = new ModelAndView("home");
         return mav;
@@ -75,7 +76,6 @@ public class ViewController
         ModelAndView mav = new ModelAndView("basket");
         mav.addObject( "cartItems", cartService.getProductsInCart() );
         mav.addObject( "totalPrice", cartService.getTotal() );
-        System.out.println(cartService.getProductsInCart()+" total: "+ cartService.getTotal());
         return mav;
     }
 
