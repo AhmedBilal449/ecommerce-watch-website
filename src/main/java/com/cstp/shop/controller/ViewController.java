@@ -5,6 +5,7 @@ import com.cstp.shop.model.User;
 import com.cstp.shop.model.dto.CartDto;
 import com.cstp.shop.model.dto.LoginDto;
 import com.cstp.shop.model.dto.SignupDto;
+import com.cstp.shop.repository.OrderRepository;
 import com.cstp.shop.repository.ProductRepository;
 import com.cstp.shop.service.CartService;
 import com.cstp.shop.service.ProductService;
@@ -38,6 +39,9 @@ public class ViewController
 
     @Autowired
     ProductRepository productRepository;
+
+    @Autowired
+    OrderRepository orderRepository;
 
     @GetMapping({"/", "/home"})
     public ModelAndView viewHome(HttpServletRequest request)
@@ -99,5 +103,14 @@ public class ViewController
         ModelAndView mav = new ModelAndView("contact");
         return mav;
     }
+
+    @GetMapping("/orders")
+    public ModelAndView viewOrders()
+    {
+        ModelAndView mav = new ModelAndView("orders");
+        mav.addObject("orders", orderRepository.findAll());
+        return mav;
+    }
+
 
 }

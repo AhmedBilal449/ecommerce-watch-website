@@ -778,7 +778,7 @@ width:50%;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.body-container-product{
+/*.body-container-product{
     min-height: 100vh;
     display: grid;
     place-content: center;
@@ -787,13 +787,13 @@ width:50%;
 .product-container{
     width: 95vw;
     height:150vh;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-around;
-}
+}*/
 
 .headerr{
-  margin-top: 100px;
+  margin-top: 15px;
     width: 100%;
     text-align: center;
 }
@@ -919,7 +919,7 @@ width:50%;
 .filter-section {
   background-color: #f8f8f8;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
   display: flex;
   justify-content: center;

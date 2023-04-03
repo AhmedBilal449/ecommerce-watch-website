@@ -36,7 +36,6 @@ public class CartController {
         return "addProductToCart()";
     }
 
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     @PostMapping("/add")
     public String formAddProductToCart(@Valid @ModelAttribute CartDto cartDto, BindingResult result, Model model) {
         productService.findById(cartDto.getId()).ifPresent(cartService::addProduct);
